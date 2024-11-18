@@ -1,0 +1,19 @@
+{
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${UICop}"
+    ],
+    "al.ruleSetPath": "./DG/ditech.ruleset.json",
+    "alOutline.codeCleanupActions": [
+        "AddToolTips",
+        "FixKeywordsCase",
+        "FixIdentifiersCase",
+        "SortVariables",
+        "AddApplicationAreas",
+        "SortTableFields",
+        "AddMissingParentheses",
+        "RemoveBeginEnd",
+        "RemoveUnusedVariables"
+    ]       
+}

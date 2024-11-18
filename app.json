@@ -1,0 +1,40 @@
+{
+  "id": "a2f9d730-c0b3-44ff-8dbb-9a5d04dae7c5",
+  "name": "DG Protemax Custom",
+  "publisher": "Ditech Group",
+  "version": "24.0.0.1",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "b154dd4c-9966-40d4-a9a4-74a8180d7efe",
+      "name": "Localización Perú",
+      "publisher": "Ditech",
+      "version": "18.1.1.14"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 80100,
+      "to": 80199
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": false,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}

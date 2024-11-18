@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Protemaxpruebas",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "Protemaxpruebas",
+            "tenant": "ba396d44-0e1e-4d81-b058-8969101c4b4e",            
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "BCDO",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "BCDO",
+            "tenant": "b4f0c95f-1fba-456a-be54-3adb7031f56a",            
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "bc24cu3w1",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://bc24cu3w1",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",            
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "usePublicURLFromServer": true,
+            "schemaUpdateMode": "ForceSync"
+        }
+    ]
+}
