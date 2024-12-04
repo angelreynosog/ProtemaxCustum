@@ -16,69 +16,80 @@ table 80101 "DG Purchase Request Line"
             Caption = 'Document Type';
             DataClassification = CustomerContent;
         }
-        field(3; "Line No."; Integer)
+        field(3; Type; Enum "Purchase Line Type")
+        {
+            Caption = 'Type';
+            DataClassification = CustomerContent;
+        }
+        field(4; "Line No."; Integer)
         {
             Caption = 'Line No.';
             DataClassification = CustomerContent;
         }
-        field(4; "Item No."; Code[20])
+        field(5; "No."; Code[20])
         {
-            Caption = 'Item No.';
-            TableRelation = Item."No.";
+            Caption = 'No.';
+
+            TableRelation = if (Type = const(" ")) "Standard Text"
+            else
+            if (Type = const("G/L Account")) "G/L Account" where("Direct Posting" = const(true), "Account Type" = const(Posting), Blocked = const(false))
+            else
+            if (Type = const("Fixed Asset")) "Fixed Asset"
+            else
+            if (Type = const(Item)) Item where(Blocked = const(false));
             DataClassification = CustomerContent;
 
             trigger OnValidate()
             begin
-                GetSearchFields(Rec."Item No.");
+                GetSearchFields(Rec."No.");
             end;
         }
-        field(5; "Description"; Text[100])
+        field(6; "Description"; Text[100])
         {
             Caption = 'Item Description';
             DataClassification = CustomerContent;
             Editable = false;
         }
-        field(6; "Description 2"; Text[100])
+        field(7; "Description 2"; Text[100])
         {
             Caption = 'Item Description 2';
             DataClassification = CustomerContent;
         }
-        field(7; "Inventory Total"; Decimal)
+        field(8; "Inventory Total"; Decimal)
         {
             Caption = 'Inventory Total';
             DataClassification = CustomerContent;
             Editable = false;
         }
-        field(8; "Inventory Without Obs. Whs."; Decimal)
+        field(9; "Inventory Without Obs. Whs."; Decimal)
         {
             Caption = 'Inventory Without Obs. Whs.';
             DataClassification = CustomerContent;
             Editable = false;
         }
-        field(9; "Base Unit of Measure"; Code[10])
+        field(10; "Base Unit of Measure"; Code[10])
         {
             Caption = 'Base Unit of Measure';
+            TableRelation = "Unit of Measure";
             DataClassification = CustomerContent;
-            Editable = false;
         }
-        field(10; "Unit Cost"; Decimal)
+        field(11; "Unit Cost"; Decimal)
         {
             Caption = 'Unit Cost';
             DataClassification = CustomerContent;
-            Editable = false;
         }
-        field(11; "Inventory Posting Group"; Code[20])
+        field(12; "Inventory Posting Group"; Code[20])
         {
             Caption = 'Inventory Posting Group';
             DataClassification = CustomerContent;
             Editable = false;
         }
-        field(12; "Quantity"; Decimal)
+        field(13; "Quantity"; Decimal)
         {
             Caption = 'Quantity';
             DataClassification = CustomerContent;
         }
-        field(13; "Qty. to Requested"; Decimal)
+        field(14; "Qty. to Requested"; Decimal)
         {
             Caption = 'Qty. to Requested';
             DataClassification = CustomerContent;
@@ -95,57 +106,45 @@ table 80101 "DG Purchase Request Line"
                     Error('Ya no puede');
             end;
         }
-        field(14; "Qty. Requested"; Decimal)
+        field(15; "Qty. Requested"; Decimal)
         {
             Caption = 'Quantity Requested';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = sum("DG Entry Purchase Request"."Quantity Requested" where("Document No." = field("Document No."), "Line No." = field("Line No.")));
         }
-        field(15; "Vendor Code"; Code[20])
+        field(16; "Vendor Code"; Code[20])
         {
             Caption = 'Vendor Code';
             TableRelation = Vendor."No.";
             DataClassification = CustomerContent;
         }
-        field(16; "Request Date"; Date)
+        field(17; "Request Date"; Date)
         {
             Caption = 'Request Date';
             DataClassification = CustomerContent;
         }
-        field(17; "Order Status"; Enum "DG Purchase Quote Status")
+        field(18; "Order Status"; Enum "DG Purchase Quote Status")
         {
             Caption = 'Order Status';
             Editable = false;
             DataClassification = CustomerContent;
         }
-        field(18; "Order No."; Code[20])
+        field(19; "Order No."; Code[20])
         {
             Caption = 'Order No.';
             Editable = false;
-            TableRelation = "Purchase Header"."No." where("Document Type" = const(Order));
+            TableRelation = "Purchase Header"."No." where("Document Type" = const(Order), "DG Request No." = field("Document No."));
             DataClassification = CustomerContent;
         }
-        field(19; "User Id Authorized"; Code[50])
-        {
-            Caption = 'User Id Authorized';
-            Editable = false;
-            DataClassification = CustomerContent;
-        }
-        field(20; "Authorization Date"; Date)
-        {
-            Caption = 'User Id';
-            Editable = false;
-            DataClassification = CustomerContent;
-        }
-        field(21; "User Id"; Code[50])
+        field(22; "User Id"; Code[50])
         {
             Caption = 'User Id';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = lookup("DG Purchase Request Header"."User Id" where("No." = field("Document No.")));
         }
-        field(22; "Create Date"; Date)
+        field(23; "Create Date"; Date)
         {
             Caption = 'User Id';
             Editable = false;
@@ -162,27 +161,55 @@ table 80101 "DG Purchase Request Line"
         }
     }
 
-    local procedure GetSearchFields(ItemNo: Code[20])
+    local procedure GetSearchFields(No: Code[20])
     var
         Item: Record Item;
+        GLAccount: Record "G/L Account";
+        FixedAsset: Record "Fixed Asset";
         DGManagament: Codeunit "DG Managament";
         InventoryWithoutObsWhs: Decimal;
     begin
-        if Item.Get(ItemNo) then begin
-            Item.CalcFields(Inventory);
-            Clear(InventoryWithoutObsWhs);
-            DGManagament.GetQtyInventoryObsolete(ItemNo, InventoryWithoutObsWhs);
-
-            Rec."Description" := Item.Description;
-            Rec."Description 2" := Item.Description;
-            Rec."Inventory Total" := Item.Inventory;
-            Rec."Inventory Without Obs. Whs." := InventoryWithoutObsWhs;
-            Rec."Base Unit of Measure" := Item."Base Unit of Measure";
-            Rec."Unit Cost" := Item."Unit Cost";
-            Rec."Inventory Posting Group" := Item."Inventory Posting Group";
-            Rec."Request Date" := WorkDate();
-        end else
-            Clear(Item);
+        case Type of
+            "Purchase Line Type"::Item:
+                if Item.Get(No) then begin
+                    Item.CalcFields(Inventory);
+                    Clear(InventoryWithoutObsWhs);
+                    DGManagament.GetQtyInventoryObsolete(No, InventoryWithoutObsWhs);
+                    Rec."Description" := Item.Description;
+                    Rec."Description 2" := Item.Description;
+                    Rec."Inventory Total" := Item.Inventory;
+                    Rec."Inventory Without Obs. Whs." := InventoryWithoutObsWhs;
+                    Rec."Base Unit of Measure" := Item."Base Unit of Measure";
+                    Rec."Unit Cost" := Item."Unit Cost";
+                    Rec."Inventory Posting Group" := Item."Inventory Posting Group";
+                    Rec."Request Date" := WorkDate();
+                end else
+                    Clear(Item);
+            "Purchase Line Type"::"G/L Account":
+                if GLAccount.Get(No) then begin
+                    Rec."Description" := GLAccount.Name;
+                    Rec."Description 2" := GLAccount.Name;
+                    Rec."Inventory Total" := 0;
+                    Rec."Inventory Without Obs. Whs." := 0;
+                    Rec."Base Unit of Measure" := '';
+                    Rec."Unit Cost" := 0;
+                    Rec."Inventory Posting Group" := '';
+                    Rec."Request Date" := WorkDate();
+                end else
+                    Clear(GLAccount);
+            "Purchase Line Type"::"Fixed Asset":
+                if FixedAsset.Get(No) then begin
+                    Rec."Description" := FixedAsset.Description;
+                    Rec."Description 2" := FixedAsset.Description;
+                    Rec."Inventory Total" := 0;
+                    Rec."Inventory Without Obs. Whs." := 0;
+                    Rec."Base Unit of Measure" := '';
+                    Rec."Unit Cost" := 0;
+                    Rec."Inventory Posting Group" := '';
+                    Rec."Request Date" := WorkDate();
+                end else
+                    Clear(FixedAsset);
+        end;
     end;
 
 }

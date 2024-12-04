@@ -27,13 +27,13 @@ table 80100 "DG Purchase Request Header"
             Caption = 'Request Date';
             DataClassification = CustomerContent;
         }
-        field(5; "User Id"; Code[50])
+        field(98; "User Id"; Code[50])
         {
             Caption = 'User Id';
             DataClassification = CustomerContent;
             Editable = false;
         }
-        field(6; "Create Date"; Date)
+        field(99; "Create Date"; Date)
         {
             Caption = 'Create Date';
             DataClassification = CustomerContent;

@@ -1,11 +1,10 @@
 codeunit 80100 "DG Managament"
 {
-    procedure ConvertToRequisition(RecordRefIn: RecordRef)
+    procedure ConvertRequestPurchase(RecordRefIn: RecordRef)
     var
         DGPurchaseRequestLine: Record "DG Purchase Request Line";
     begin
         RecordRefIn.SetTable(DGPurchaseRequestLine);
-        //DGPurchaseRequestLine.SetCurrentKey("Vendor Code", "Item No.");
         if DGPurchaseRequestLine.FindSet() then
             repeat
                 FindHeaderRequest(DGPurchaseRequestLine."Document No.");
@@ -58,7 +57,6 @@ codeunit 80100 "DG Managament"
                 GenJournalLine.Validate(Amount, DGGeneralJournalLine.Amount);
                 GenJournalLine."Shortcut Dimension 1 Code" := DGGeneralJournalLine."Dimension 1";
                 GenJournalLine."Shortcut Dimension 2 Code" := DGGeneralJournalLine."Dimension 2";
-                //GenJournalLine."Shortcut Dimension 4 Code" := DGGeneralJournalLine."Dimension 4";
                 GenJournalLine.Insert();
             until DGGeneralJournalLine.Next() = 0;
     end;
@@ -121,7 +119,6 @@ codeunit 80100 "DG Managament"
             PurchaseHeader.Validate("Buy-from Vendor No.", VendorNo);
             PurchaseHeader.Validate("Pay-to Vendor No.", VendorNo);
             PurchaseHeader.Validate("Posting Date", WorkDate());
-            PurchaseHeader."Requested Receipt Date" := DGPurchaseRequestHeader."Request Date";
             PurchaseHeader."DG Request No." := DGPurchaseRequestHeader."No.";
             PurchaseHeader.Insert();
 
@@ -148,8 +145,8 @@ codeunit 80100 "DG Managament"
         PurchaseLine.SetRange("Document No.", NewDocLastNo);
         if PurchaseLine.FindSet() then begin
             PurchaseLine."Line No." := NoLine;
-            PurchaseLine.Type := PurchaseLine.Type::Item;
-            PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."Item No.");
+            PurchaseLine.Type := DGPurchaseRequestLineIn.Type;
+            PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."No.");
             PurchaseLine.Description := DGPurchaseRequestLineIn."Description 2";
             PurchaseLine.Validate(Quantity, DGPurchaseRequestLineIn."Qty. to Requested");
             PurchaseLine."Requested Receipt Date" := DGPurchaseRequestLineIn."Request Date";
@@ -159,8 +156,8 @@ codeunit 80100 "DG Managament"
             PurchaseLine."Document Type" := PurchaseLine."Document Type"::Order;
             PurchaseLine."Document No." := NewDocLastNo;
             PurchaseLine."Line No." := NoLine;
-            PurchaseLine.Type := PurchaseLine.Type::Item;
-            PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."Item No.");
+            PurchaseLine.Type := DGPurchaseRequestLineIn.Type;
+            PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."No.");
             PurchaseLine.Description := DGPurchaseRequestLineIn."Description 2";
             PurchaseLine.Validate(Quantity, DGPurchaseRequestLineIn."Qty. to Requested");
             PurchaseLine."Requested Receipt Date" := DGPurchaseRequestLineIn."Request Date";
@@ -177,7 +174,8 @@ codeunit 80100 "DG Managament"
         DGEntryPurchaseRequest."Document No." := DGPurchaseRequestLineIn."Document No.";
         DGEntryPurchaseRequest."Document Type" := DGPurchaseRequestLineIn."Document Type";
         DGEntryPurchaseRequest."Line No." := DGPurchaseRequestLineIn."Line No.";
-        DGEntryPurchaseRequest."Item No." := DGPurchaseRequestLineIn."Item No.";
+        DGEntryPurchaseRequest.Type := DGPurchaseRequestLineIn.Type;
+        DGEntryPurchaseRequest."No." := DGPurchaseRequestLineIn."No.";
         DGEntryPurchaseRequest.Description := DGPurchaseRequestLineIn.Description;
         DGEntryPurchaseRequest."Description 2" := DGPurchaseRequestLineIn."Description 2";
         DGEntryPurchaseRequest."Inventory Total" := DGPurchaseRequestLineIn."Inventory Total";
@@ -315,11 +313,6 @@ codeunit 80100 "DG Managament"
             TotalExclVATText := StrSubstNo(TotalExclVATTxtLbl, CurrencyCode);
         end;
     end;
-
-
-
-
-
 
 
     var

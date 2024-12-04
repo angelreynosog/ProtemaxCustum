@@ -237,7 +237,7 @@ report 80100 "DG Order"
                     { }
                     column(ShipToVendorText; ShipToVendorTextLbl)
                     { }
-                    column(AmountLetter; StrSubstNo('%1 %2%3', AreLbl, AmountLetter1[1], AmountLetter2))
+                    column(AmountLetter; StrSubstNo('%1 %2%3 %4', AreLbl, AmountLetter1[1], AmountLetter2, AmountLetter3))
                     { }
                     column(FooterOrderText; PurchSetup."DG Purchase Order Footer Text")
                     { }
@@ -329,7 +329,7 @@ report 80100 "DG Order"
                         }
                         column(AllowInvDisc_PurchLine; "Purchase Line"."Allow Invoice Disc.")
                         { }
-                        column(HomePage; CompanyInfo."Home Page")
+                        column(HomePage; '')
                         { }
                         column(EMail; CompanyInfo."E-Mail")
                         { }
@@ -826,6 +826,12 @@ report 80100 "DG Order"
 
                     Utilitiess.FormatNoText(AmountLetter1, TotalAmountInclVAT);
                     Utilitiess.FormatNoText2(AmountLetter2, TotalAmountInclVAT);
+                    if "Purchase Header"."Currency Code" <> '' then begin
+                        if not Currency.Get("Purchase Header"."Currency Code") then
+                            exit;
+                        AmountLetter3 := Currency.Description;
+                    end else
+                        AmountLetter3 := GLSetup."Local Currency Description";
 
                     if "Purchase Header"."Location Code" = '' then begin
                         ShipToName := StrSubstNo('%1 %2', "Purchase Header"."Buy-from Vendor Name", "Purchase Header"."Buy-from Vendor Name 2");
@@ -1111,6 +1117,7 @@ report 80100 "DG Order"
         CurrExchRate: Record "Currency Exchange Rate";
         PurchSetup: Record "Purchases & Payables Setup";
         BuyFromContact: Record Contact;
+        Currency: Record Currency;
         PayToContact: Record Contact;
         LanguageMgt: Codeunit Language;
         FormatAddr: Codeunit "Format Address";
@@ -1138,6 +1145,7 @@ report 80100 "DG Order"
         OldDimText: Text[75];
         AmountLetter1: array[2] of Text[80];
         AmountLetter2: Text[80];
+        AmountLetter3: Text[80];
         ShipToName: Text[200];
         ShipToAddress: Text[100];
         ShipToAddress2: Text[50];

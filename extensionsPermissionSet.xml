@@ -132,6 +132,16 @@
       <SecurityFilter />
     </Permission>
     <Permission>
+      <ObjectID>80110</ObjectID>
+      <ObjectType>8</ObjectType>
+      <ReadPermission>0</ReadPermission>
+      <InsertPermission>0</InsertPermission>
+      <ModifyPermission>0</ModifyPermission>
+      <DeletePermission>0</DeletePermission>
+      <ExecutePermission>1</ExecutePermission>
+      <SecurityFilter />
+    </Permission>
+    <Permission>
       <ObjectID>80108</ObjectID>
       <ObjectType>8</ObjectType>
       <ReadPermission>0</ReadPermission>
@@ -234,6 +244,16 @@
     <Permission>
       <ObjectID>80100</ObjectID>
       <ObjectType>3</ObjectType>
+      <ReadPermission>0</ReadPermission>
+      <InsertPermission>0</InsertPermission>
+      <ModifyPermission>0</ModifyPermission>
+      <DeletePermission>0</DeletePermission>
+      <ExecutePermission>1</ExecutePermission>
+      <SecurityFilter />
+    </Permission>
+    <Permission>
+      <ObjectID>80100</ObjectID>
+      <ObjectType>9</ObjectType>
       <ReadPermission>0</ReadPermission>
       <InsertPermission>0</InsertPermission>
       <ModifyPermission>0</ModifyPermission>

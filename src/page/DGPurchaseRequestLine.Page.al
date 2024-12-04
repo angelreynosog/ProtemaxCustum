@@ -1,6 +1,5 @@
 page 80101 "DG Purchase Request Line"
 {
-    //Caption = 'DG Purchase Request Line';
     PageType = ListPart;
     SourceTable = "DG Purchase Request Line";
     DelayedInsert = true;
@@ -13,7 +12,16 @@ page 80101 "DG Purchase Request Line"
         {
             repeater(General)
             {
-                field("Item No."; Rec."Item No.")
+                field(Type; Rec.Type)
+                {
+                    ApplicationArea = All;
+                    Importance = Standard;
+                    ValuesAllowed = 0, 1, 2, 4;
+                    Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
+                    ToolTip = 'Specifies the value of the Type field.';
+                }
+
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
                     Importance = Standard;
@@ -146,9 +154,16 @@ page 80101 "DG Purchase Request Line"
 
                         until DGPurchaseRequestLine.Next() = 0;
                     RecordRef.GetTable(DGPurchaseRequestLine);
-                    DGManagament.ConvertToRequisition(RecordRef);
+                    DGManagament.ConvertRequestPurchase(RecordRef);
                 end;
             }
         }
     }
+
+    // trigger OnOpenPage()
+    // var
+    //     myInt: Integer;
+    // begin
+
+    // end;
 }

@@ -93,15 +93,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Entry Purchase Request - Field Inventory Without Obs. Whs. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4106287663 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Entry Purchase Request - Field Item No. - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 4106287663 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Entry Purchase Request - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4106287663 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Entry Purchase Request - Field No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4106287663 - Field 2202932243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Order No.</source>
@@ -122,6 +122,11 @@
           <source>Request Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Entry Purchase Request - Field Request Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4106287663 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Entry Purchase Request - Field Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4106287663 - Field 381961415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit Cost</source>
@@ -278,11 +283,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 177378425 - Field 2997702281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>User Id</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Authorization Date - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 177378425 - Field 411531942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Base Unit of Measure</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -328,15 +328,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Inventory Without Obs. Whs. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 177378425 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Item No. - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 177378425 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 177378425 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 177378425 - Field 2202932243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Order No.</source>
@@ -368,6 +368,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Request Date - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 177378425 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Type - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 177378425 - Field 381961415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit Cost</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -377,11 +382,6 @@
           <source>User Id</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field User Id - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 177378425 - Field 2182398645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>User Id Authorized</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field User Id Authorized - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 177378425 - Field 2853492251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Vendor Code</source>
@@ -432,6 +432,786 @@
           <source>Specifies the value of the Date field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Comment Line - Control Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DG Sales Order - Microsoft Dynamics 365 Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1267408499 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the coupled Dynamics 365 Sales account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Account - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1267408499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3993128796 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the contact person at the customer.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Contact - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3993128796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Contact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1317399287 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies when the sales order was delivered.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Date Fulfilled - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1317399287 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Fulfilled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Date Fulfilled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1742461299 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the sales opportunity that is coupled to this Dynamics 365 Sales opportunity.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Opportunity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1742461299 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opportunity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Opportunity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2248457887 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control OrderNumber - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2248457887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control OrderNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3809237070 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Quote - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3809237070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Quote - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3615681166 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control StateCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3615681166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control StateCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 355226323 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control StatusCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 355226323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control StatusCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1450094168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoicing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1695608876 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the city of the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_City - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1695608876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To City</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_City - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 43742556 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the contact person at the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_ContactName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 43742556 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Contact Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_ContactName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3816219705 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the country/region of the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Country - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3816219705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Country/Region</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Country - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2350905924 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the fax number at the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Fax - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2350905924 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Fax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Fax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1622057740 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the street of the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Line1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1622057740 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Street 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Line1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2259754357 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the additional street information of the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Line2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2259754357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Street 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Line2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2897450974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the additional street information of the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Line3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2897450974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Street 3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Line3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1883467004 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name at the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1883467004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2050446009 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ZIP/postal code of the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_PostalCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2050446009 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To ZIP/Postal Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_PostalCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2894739417 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the state/province of the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_StateOrProvince - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2894739417 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To State/Province</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_StateOrProvince - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2314333341 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the phone number at the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Telephone - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2314333341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Phone</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control BillTo_Telephone - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3561154705 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the currency that amounts are shown in.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Currency - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3561154705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Currency - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3417937915 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control DiscountAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3417937915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Discount Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control DiscountAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2358052727 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control DiscountPercentage - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2358052727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Discount (%)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control DiscountPercentage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1506053127 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control IsPriceLocked - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1506053127 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prices Locked</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control IsPriceLocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 4230600534 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the payment terms that you select from on customer cards to define when the customer must pay, such as within 14 days.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control PaymentTermsCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 4230600534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control PaymentTermsCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1176349481 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a list of your items and their prices, for example, to send to customers. You can create the list for specific customers, campaigns, currencies, or other criteria.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Price List - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1176349481 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Price List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 588318770 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 588318770 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1411376664 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies data from a corresponding field in a Dynamics 365 Sales entity. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalAmountLessFreight - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1411376664 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Pre-Freight Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalAmountLessFreight - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 325267077 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalDiscountAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 325267077 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Discount Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalDiscountAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3592942655 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalLineItemAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3592942655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Detail Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalLineItemAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1548615561 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the sum of TAX amounts on all lines in the document.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalTax - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1548615561 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Tax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control TotalTax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3471137671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3097346278 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control Shipping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2591159093 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the shipment method.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control FreightTermsCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2591159093 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Freight Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control FreightTermsCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1007279378 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control RequestDeliveryBy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1007279378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requested Delivery Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control RequestDeliveryBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2001012316 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShippingMethodCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2001012316 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipping Method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShippingMethodCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3825981907 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_City - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3825981907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To City</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_City - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 4258986938 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the country/region of the address.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Country - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 4258986938 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To Country/Region</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Country - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1832797619 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Fax - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1832797619 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship to Fax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Fax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3310584527 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_FreightTermsCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3310584527 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To Freight Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_FreightTermsCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2216369291 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Line1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2216369291 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To Street 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Line1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 4129459142 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Line2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 4129459142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To Street 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Line2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3491762525 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Line3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3491762525 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To Street 3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Line3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2523183427 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 2523183427 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 245991746 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_PostalCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 245991746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To ZIP/Postal Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_PostalCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3879634730 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_StateOrProvince - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 3879634730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To State/Province</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_StateOrProvince - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1353965614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Telephone - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Control 1353965614 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To Phone</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Control ShipTo_Telephone - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 2038220399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics 365 Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action ActionGroupCRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 1205668361 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the coupled Dynamics 365 Sales sales order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action CRMGoToSalesOrderHyperlink - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 1205668361 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action CRMGoToSalesOrderHyperlink - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 1196185124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action ActionGroupNAV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 2646284430 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a sales order in Dynamics 365 that is coupled to the Dynamics 365 Sales entity.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action CreateInNAV - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 2646284430 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create in Business Central</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action CreateInNAV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 2619639553 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the coupled Dynamics 365 Sales sales order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action NAVOpenSalesOrderCard - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 2619639553 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action NAVOpenSalesOrderCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2314741307 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order - Action Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DG Sales Orders - Microsoft Dynamics 365 Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 3522987222 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the address that the invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control BillTo_Composite - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 3522987222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill To Address</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control BillTo_Composite - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2562566774 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the contact person at the customer.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control ContactIdName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2562566774 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control ContactIdName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2982338671 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies when the sales order was delivered.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control DateFulfilled - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2982338671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Fulfilled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control DateFulfilled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2591159093 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the shipment method.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control FreightTermsCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2591159093 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Freight Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control FreightTermsCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 1506053127 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control IsPriceLocked - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 1506053127 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prices Locked</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control IsPriceLocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 183279757 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the sales opportunity that is coupled to this Dynamics 365 Sales opportunity.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control OpportunityIdName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 183279757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opportunity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control OpportunityIdName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2248457887 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control OrderNumber - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2248457887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control OrderNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 4230600534 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the payment terms that you select from on customer cards to define when the customer must pay, such as within 14 days.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control PaymentTermsCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 4230600534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control PaymentTermsCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 574829291 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a list of your items and their prices, for example, to send to customers. You can create the list for specific customers, campaigns, currencies, or other criteria.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control PriceLevelIdName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 574829291 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control PriceLevelIdName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 993057476 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control QuoteIdName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 993057476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control QuoteIdName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 1007279378 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control RequestDeliveryBy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 1007279378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requested Delivery Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control RequestDeliveryBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2001012316 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control ShippingMethodCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 2001012316 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipping Method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control ShippingMethodCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 1077175429 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control ShipTo_Composite - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 1077175429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To Address</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control ShipTo_Composite - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 3615681166 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control StateCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 3615681166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control StateCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 355226323 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control StatusCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 355226323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control StatusCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 588318770 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control TotalAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 588318770 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control TotalAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 1320832259 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control TransactionCurrencyIdName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 1320832259 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control TransactionCurrencyIdName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 323083016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information related to the Dynamics 365 Sales connection. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control WillCall - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Control 323083016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship To</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Control WillCall - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 2038220399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics 365 Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action ActionGroupCRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 2108050987 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the coupled Dynamics 365 Sales sales order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action CRMGoToSalesOrder - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 2108050987 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action CRMGoToSalesOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 1196185124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Central</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action ActionGroupNAV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 2646284430 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a sales order in Dynamics 365 that is coupled to the Dynamics 365 Sales entity.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action CreateInNAV - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 2646284430 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create in Business Central</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action CreateInNAV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 580853590 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show coupled sales orders.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action ShowAll - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 580853590 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Coupled Sales Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action ShowAll - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 1904219732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do not show coupled sales orders.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action ShowOnlyUncoupled - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 1904219732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hide Coupled Sales Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action ShowOnlyUncoupled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 2477294019 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete All Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action Delete - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 2477294019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete All</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action Delete - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 119521189 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG CRM Sales Order List - Action Category_Process - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG Entry Purchase Request</source>
@@ -498,15 +1278,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Inventory Without Obs. Whs. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 4106287663 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Item No. field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Item No. - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="Page 4106287663 - Control 3320823955 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Line No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Line No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4106287663 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Item No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 2202932243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Order No. field.</source>
@@ -773,10 +1553,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Inventory Without Obs. Whs. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 177378425 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 177378425 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Item No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Item No. - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 1195444726 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Qty. Requested field.</source>
@@ -797,6 +1577,11 @@
           <source>Specifies the value of the Request Date field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Request Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 177378425 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 381961415 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Unit Cost field.</source>
@@ -1232,6 +2017,16 @@
           <source>Show Internal Information</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report DG Order - Control ShowInternalInformation1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2007997638 - Action 70525830 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Offer items or services to a customer.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DG Business Manager Role - Action Request Purchase - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2007997638 - Action 70525830 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Request Purchase</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DG Business Manager Role - Action Request Purchase - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 3074367638 - Control 1988458656 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Inventory Without Obsolete WareHouses</source>

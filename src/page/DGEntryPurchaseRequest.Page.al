@@ -36,7 +36,7 @@ page 80107 "DG Entry Purchase Request"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Line No. field.';
                 }
-                field("Item No."; Rec."Item No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Item No. field.';
