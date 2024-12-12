@@ -8,6 +8,11 @@ pageextension 80104 "DG Purchases & Payables Setup" extends "Purchases & Payable
             {
                 ApplicationArea = All;
             }
+            field("DG Serie Batch Code"; Rec."DG Serie Batch Code")
+            {
+                ApplicationArea = All;
+                ToolTip = ' ';
+            }
         }
 
         addafter("Default Accounts")
@@ -19,6 +24,14 @@ pageextension 80104 "DG Purchases & Payables Setup" extends "Purchases & Payable
                     ApplicationArea = All;
                     MultiLine = true;
                 }
+            }
+        }
+        addafter("Report Output Type")
+        {
+            field("Batch Payment Detraction"; Rec."Batch Payment Detraction")
+            {
+                ApplicationArea = All;
+                ToolTip = ' ';
             }
         }
     }

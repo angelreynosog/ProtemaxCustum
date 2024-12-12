@@ -13,5 +13,17 @@ tableextension 80105 "DG Purchases & Payables Setup" extends "Purchases & Payabl
             Caption = '* Purchase Order Footer';
             DataClassification = CustomerContent;
         }
+        field(80102; "DG Serie Batch Code"; Code[20])
+        {
+            Caption = 'Serie Batch Code';
+            TableRelation = "No. Series";
+            DataClassification = CustomerContent;
+        }
+        field(80103; "Batch Payment Detraction"; Code[20])
+        {
+            Caption = 'Batch Payment Detraction';
+            TableRelation = "Gen. Journal Batch".Name where("Journal Template Name" = const('PAYMENTS'));
+            DataClassification = CustomerContent;
+        }
     }
 }
