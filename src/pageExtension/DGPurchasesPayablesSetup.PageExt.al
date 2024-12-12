@@ -21,5 +21,13 @@ pageextension 80104 "DG Purchases & Payables Setup" extends "Purchases & Payable
                 }
             }
         }
+        addafter("Report Output Type")
+        {
+            field("Batch Payment Detraction"; Rec."Batch Payment Detraction")
+            {
+                ApplicationArea = All;
+                ToolTip = ' ';
+            }
+        }
     }
 }
