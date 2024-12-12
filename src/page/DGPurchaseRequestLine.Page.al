@@ -26,28 +26,30 @@ page 80101 "DG Purchase Request Line"
                     ApplicationArea = All;
                     Importance = Standard;
                     Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
-                    ToolTip = 'Specifies the value of the Item No. field.';
+                    ToolTip = 'Specifies the value of the No. field.';
                 }
                 field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Item Description field.';
+                    ToolTip = 'Specifies the value of the Description field.';
                 }
                 field("Description 2"; Rec."Description 2")
                 {
                     ApplicationArea = All;
                     Importance = Standard;
                     Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
-                    ToolTip = 'Specifies the value of the Item Description 2 field.';
+                    ToolTip = 'Specifies the value of the Description 2 field.';
                 }
                 field("Inventory Total"; Rec."Inventory Total")
                 {
                     ApplicationArea = All;
+                    Visible = Rec.Type = Rec.Type::Item;
                     ToolTip = 'Specifies the value of the Inventory Total field.';
                 }
                 field("Inventory Without Obs. Whs."; Rec."Inventory Without Obs. Whs.")
                 {
                     ApplicationArea = All;
+                    Visible = Rec.Type = Rec.Type::Item;
                     ToolTip = 'Specifies the value of the Inventory Without Obs. Whs. field.';
                 }
                 field("Base Unit of Measure"; Rec."Base Unit of Measure")
@@ -63,6 +65,7 @@ page 80101 "DG Purchase Request Line"
                 field("Inventory Posting Group"; Rec."Inventory Posting Group")
                 {
                     ApplicationArea = All;
+                    Visible = Rec.Type = Rec.Type::Item;
                     ToolTip = 'Specifies the value of the Inventory Posting Group field.';
                 }
                 field("Vendor Code"; Rec."Vendor Code")

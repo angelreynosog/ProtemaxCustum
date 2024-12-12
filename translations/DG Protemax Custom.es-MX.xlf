@@ -23,19 +23,19 @@
         </trans-unit>
         <trans-unit id="Table 3462295906 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No.</source>
-          <target state="translated">No.</target>
+          <target state="translated">N°</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Comment Line - Field Document No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3462295906 - Field 4114186314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No.</source>
-          <target state="translated">No.</target>
+          <target state="translated">N°</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Comment Line - Field Line Document No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3462295906 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line No.</source>
-          <target state="translated">N°. línea</target>
+          <target state="translated">N° línea</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Comment Line - Field Line No. - Property Caption</note>
         </trans-unit>

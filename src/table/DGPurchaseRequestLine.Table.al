@@ -46,13 +46,13 @@ table 80101 "DG Purchase Request Line"
         }
         field(6; "Description"; Text[100])
         {
-            Caption = 'Item Description';
+            Caption = 'Description';
             DataClassification = CustomerContent;
             Editable = false;
         }
         field(7; "Description 2"; Text[100])
         {
-            Caption = 'Item Description 2';
+            Caption = 'Description 2';
             DataClassification = CustomerContent;
         }
         field(8; "Inventory Total"; Decimal)
