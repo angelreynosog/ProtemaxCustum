@@ -33,6 +33,136 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Comment Line - Field Line No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2056217519 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Detraction Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2056217519 - Field 2674503554 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Close</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Header - Field Close - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2056217519 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Header - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2056217519 - Field 2649176925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Header - Field End Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2056217519 - Field 804481195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Header - Field File Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2056217519 - Field 4049614442 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity Record</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Header - Field Quantity Record - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2056217519 - Field 474480784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Header - Field Start Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2056217519 - Field 3692706522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Header - Field Total Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Detraction Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 3756990933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Amount Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 1682139193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Bank Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 2928464440 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Detraction Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Detraction Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 311847455 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Detraction Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Detraction Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Document Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 2176155870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type Sunat</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Document Type Sunat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 1735507514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 2548059238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Operation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field No. Operation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 1042310218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>% Detraction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Purch. % Detraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 3523805289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Detraction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Purch. Amount Detraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 283443801 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Transaction Number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 3440505640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type of Operation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Type of Operation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 2852005928 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type of Service</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Type of Service - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 2853492251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Vendor Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1285519784 - Field 3119688693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Detraction Line - Field Vendor Name - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 4106287663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Entry Purchase Request</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -432,6 +562,211 @@
           <source>Specifies the value of the Date field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Comment Line - Control Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 754053818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DG Detraction Card</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 754053818 - Control 1876862036 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Control DGDetractionList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 754053818 - Action 1586576836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Action Generate Text File - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 754053818 - Action 1586576836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate Text File</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Action Generate Text File - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 754053818 - Action 2591044054 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Action Get Documents - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 754053818 - Action 2591044054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get Documents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Action Get Documents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 754053818 - Action 2591044054 - Method 1377591017 - NamedType 512218371" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Are you sure you can get detraction documents?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Action Get Documents - Method OnAction - NamedType Texto1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DG Detraction Certificate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 2928464440 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Detraction Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control Detraction Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 311847455 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Detraction Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control Detraction Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document Number field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 2176155870 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document Type Sunat field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control Document Type Sunat - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 2548059238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the No. Operation field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control No. Operation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 1042310218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Purch. % Detraction field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control Purch. % Detraction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 3523805289 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Purch. Amount Detraction field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control Purch. Amount Detraction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 2853492251 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Vendor Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control Vendor Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Control 3119688693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Vendor Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Control Vendor Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Action 1641712925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Action Importfile - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1644380257 - Action 1641712925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import file</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Certificate - Action Importfile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 3756990933 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Amount Document field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Amount Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 1682139193 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Bank Account field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Bank Account - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 4198939294 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Currency Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 2176155870 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document Type Sunat field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Document Type Sunat - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 1042310218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Purch. % Detraction field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Purch. % Detraction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 3523805289 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Purch. Amount Detraction field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Purch. Amount Detraction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 2852005928 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type of Service field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Type of Service - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 2853492251 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Vendor Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Vendor Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1285519784 - Control 3119688693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Vendor Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Line - Control Vendor Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DG Detractions List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Control 2674503554 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Close field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Control Close - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Control 2649176925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Start End field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Control End Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Control 4049614442 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Quantity Record field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Control Quantity Record - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Control 474480784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Start Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Control Start Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Control 3692706522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Total Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Control Total Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Action 2111417901 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Action Detraction Payment - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Action 2111417901 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Detraction Payment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Action Detraction Payment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Action 2111417901 - Method 1377591017 - NamedType 512218371" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment processing insurance?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Action Detraction Payment - Method OnAction - NamedType Texto1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Action 1586576836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Action Generate Text File - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3435034965 - Action 1586576836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate Text File</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Detractions List - Action Generate Text File - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG Entry Purchase Request</source>
@@ -1238,6 +1573,56 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report DG Order - Control ShowInternalInformation1 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3475503510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process Payment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 3160163584 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control _BankCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 3160163584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control _BankCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 1897099197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control _Code01 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 1897099197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control _Code01 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 827601331 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control _OperationNumber - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 827601331 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control _OperationNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 1141637555 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control _PaymentDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3475503510 - Control 1141637555 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DG Process Payment - Control _PaymentDate - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2007997638 - Action 70525830 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Offer items or services to a customer.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1252,6 +1637,16 @@
           <source>Inventory Without Obsolete WareHouses</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension DG Item Card - Control Inventory Without Obs. Whs. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4091895893 - Control 522764294 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3921990236">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DG Purchases &amp; Payables Setup - Control DG Serie Batch Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4091895893 - Control 1021157617 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3921990236">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DG Purchases &amp; Payables Setup - Control Batch Payment Detraction - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 950980695 - Control 2949444790 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 337631938">
           <source>Generate Purchase Quote</source>
@@ -1278,6 +1673,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchase Header - Field DG Request No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 4091895893 - Field 1021157617 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
+          <source>Batch Payment Detraction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchases &amp; Payables Setup - Field Batch Payment Detraction - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 4091895893 - Field 109551202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
           <source>* Purchase Order Footer</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1287,6 +1687,11 @@
           <source>* DG Request Nos.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchases &amp; Payables Setup - Field DG Request Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4091895893 - Field 522764294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
+          <source>Serie Batch Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchases &amp; Payables Setup - Field DG Serie Batch Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 950980695 - Field 2949444790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
           <source>Generate Purchase Quote</source>

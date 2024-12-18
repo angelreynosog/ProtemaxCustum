@@ -8,6 +8,11 @@ pageextension 80104 "DG Purchases & Payables Setup" extends "Purchases & Payable
             {
                 ApplicationArea = All;
             }
+            field("DG Serie Batch Code"; Rec."DG Serie Batch Code")
+            {
+                ApplicationArea = All;
+                ToolTip = ' ';
+            }
         }
 
         addafter("Default Accounts")

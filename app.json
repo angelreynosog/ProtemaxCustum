@@ -16,6 +16,12 @@
       "name": "Localización Perú",
       "publisher": "Ditech",
       "version": "18.1.1.14"
+    },
+    {
+      "id": "3099ffc7-4cf7-4df6-9b96-7e4bc2bb587c",
+      "name": "Subscription & Recurring Billing",
+      "publisher": "Microsoft",
+      "version": "25.1.25873.27434"
     }
   ],
   "screenshots": [],
