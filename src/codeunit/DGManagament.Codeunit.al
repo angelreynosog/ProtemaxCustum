@@ -36,44 +36,7 @@ codeunit 80100 "DG Managament"
             until ItemLedgerEntry.Next() = 0;
     end;
 
-    procedure PostedDGJournal(Rec: Record "DG General Journal")
-    var
-        DGGeneralJournalLine: Record "DG General Journal Line";
-        GenJournalLine: Record "Gen. Journal Line";
-    begin
-        GenJournalLine.Init();
-        DGGeneralJournalLine.Reset();
-        DGGeneralJournalLine.SetRange(Code, Rec.Code);
-        if DGGeneralJournalLine.FindSet() then
-            repeat
-                GenJournalLine."Journal Template Name" := 'GENERAL';
-                GenJournalLine."Journal Batch Name" := 'DEFAULT';
-                GenJournalLine."Line No." := SearchlastlineGenJnLn();
-                GenJournalLine.Validate("Document No.", DGGeneralJournalLine.Code);
-                GenJournalLine.Validate("Posting Date", Rec."End Date");
-                GenJournalLine.Validate("Account Type", GenJournalLine."Account Type"::"G/L Account");
-                GenJournalLine."Account No." := DGGeneralJournalLine."Account No.";
-                GenJournalLine.Description := DGGeneralJournalLine.Description;
-                GenJournalLine.Validate(Amount, DGGeneralJournalLine.Amount);
-                GenJournalLine."Shortcut Dimension 1 Code" := DGGeneralJournalLine."Dimension 1";
-                GenJournalLine."Shortcut Dimension 2 Code" := DGGeneralJournalLine."Dimension 2";
-                GenJournalLine.Insert();
-            until DGGeneralJournalLine.Next() = 0;
-    end;
 
-    local procedure SearchlastlineGenJnLn() LineNoGen: Integer;
-    var
-        GenJournalLine: Record "Gen. Journal Line";
-    begin
-        GenJournalLine.Reset();
-        GenJournalLine.SetCurrentKey("Journal Template Name", "Journal Batch Name", "Line No.");
-        GenJournalLine.SetRange("Journal Template Name", 'GENERAL');
-        GenJournalLine.SetRange("Journal Batch Name", 'DEFAULT');
-        if GenJournalLine.FindLast() then
-            LineNoGen := GenJournalLine."Line No." + 10000
-        else
-            LineNoGen := 10000;
-    end;
 
     local procedure FindHeaderRequest(DocNoIn: Code[20])
     begin
@@ -90,14 +53,14 @@ codeunit 80100 "DG Managament"
         VendorNo: Code[20];
         NewVendorNo: Code[20];
         No: Code[20];
-        VendorPurchaseQuoteErr: Label 'There must be a generic supplier for purchase quotations.';
+        VendorPurchaseQuoteErr: Label 'There must be a generic vendor.';
     begin
         VendorNo := VendorCodeIn;
 
         if VendorNo = '' then begin
             Vendor.Reset();
-            Vendor.SetRange("DG General Quote Vendor", true);
-            if not Vendor.IsEmpty then
+            Vendor.SetRange("DG Generic Vendor", true);
+            if Vendor.FindFirst() then
                 VendorNo := Vendor."No."
             else
                 Error(VendorPurchaseQuoteErr);
@@ -149,6 +112,8 @@ codeunit 80100 "DG Managament"
             PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."No.");
             PurchaseLine.Description := DGPurchaseRequestLineIn."Description 2";
             PurchaseLine.Validate(Quantity, DGPurchaseRequestLineIn."Qty. to Requested");
+            if DGPurchaseRequestLineIn.Type in [DGPurchaseRequestLineIn.Type::"G/L Account", DGPurchaseRequestLineIn.Type::"Fixed Asset"] then
+                PurchaseLine."Direct Unit Cost" := DGPurchaseRequestLineIn."Unit Cost";
             PurchaseLine."Requested Receipt Date" := DGPurchaseRequestLineIn."Request Date";
             PurchaseLine.Insert();
         end else begin
@@ -160,6 +125,8 @@ codeunit 80100 "DG Managament"
             PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."No.");
             PurchaseLine.Description := DGPurchaseRequestLineIn."Description 2";
             PurchaseLine.Validate(Quantity, DGPurchaseRequestLineIn."Qty. to Requested");
+            if DGPurchaseRequestLineIn.Type in [DGPurchaseRequestLineIn.Type::"G/L Account", DGPurchaseRequestLineIn.Type::"Fixed Asset"] then
+                PurchaseLine."Direct Unit Cost" := DGPurchaseRequestLineIn."Unit Cost";
             PurchaseLine."Requested Receipt Date" := DGPurchaseRequestLineIn."Request Date";
             PurchaseLine.Insert();
         end;
@@ -314,6 +281,67 @@ codeunit 80100 "DG Managament"
         end;
     end;
 
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnBeforeValidateNo', '', true, true)]
+    local procedure SalesLine_OnBeforeValidateNo(var SalesLine: Record "Sales Line")
+    var
+        SalesHeader: Record "Sales Header";
+    begin
+        if not SalesHeader.Get(SalesLine."Document Type", SalesLine."Document No.") then
+            clear(SalesHeader)
+        else
+            SalesLine.Validate("Code System Id", SalesHeader.SystemId);
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnBeforePurchInvHeaderInsert', '', true, true)]
+    local procedure "Purch.-Post_OnBeforePurchInvHeaderInsert"(var PurchHeader: Record "Purchase Header"; var PurchInvHeader: Record "Purch. Inv. Header")
+    begin
+        PurchInvHeader."DG No. Guide Recep./Origen DUA" := PurchHeader."DG No. Guide Recep./Origen DUA";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnBeforePurchRcptHeaderInsert', '', true, true)]
+    local procedure "Purch.-Post_OnBeforePurchRcptHeaderInsert"(var PurchRcptHeader: Record "Purch. Rcpt. Header"; var PurchaseHeader: Record "Purchase Header")
+    begin
+        PurchRcptHeader."DG No. Guide Recep./Origen DUA" := PurchaseHeader."DG No. Guide Recep./Origen DUA";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnRunOnAfterPostInvoice', '', true, true)]
+    local procedure "Purch.-Post_OnRunOnAfterPostInvoice"(var PurchaseHeader: Record "Purchase Header")
+    begin
+        if PurchaseHeader.Receive then
+            Clear(PurchaseHeader."DG No. Guide Recep./Origen DUA");
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Item Journal Line", 'OnAfterCopyItemJnlLineFromPurchHeader', '', true, true)]
+    local procedure "Item Journal Line_OnAfterCopyItemJnlLineFromPurchHeader"(var ItemJnlLine: Record "Item Journal Line"; PurchHeader: Record "Purchase Header")
+    begin
+        ItemJnlLine."DG No. Guide Recep./Origen DUA" := PurchHeader."DG No. Guide Recep./Origen DUA";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Jnl.-Post Line", 'OnAfterInitItemLedgEntry', '', true, true)]
+    local procedure "Item Jnl.-Post Line_OnAfterInitItemLedgEntry"(var NewItemLedgEntry: Record "Item Ledger Entry"; var ItemJournalLine: Record "Item Journal Line")
+    begin
+        NewItemLedgEntry."DG No. Guide Recep./Origen DUA" := ItemJournalLine."DG No. Guide Recep./Origen DUA";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Purchase Document", 'OnBeforeManualReleasePurchaseDoc', '', true, true)]
+    local procedure "Release Purchase Document_OnBeforeManualReleasePurchaseDoc"(var PurchaseHeader: Record "Purchase Header")
+    begin
+        PurchaseHeader.TestField("DG No. Guide Recep./Origen DUA");
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Purch. Rcpt. Line", 'OnAfterCopyFromPurchRcptLine', '', true, true)]
+    local procedure "Purch. Rcpt. Line_OnAfterCopyFromPurchRcptLine"(var PurchaseLine: Record "Purchase Line"; PurchRcptLine: Record "Purch. Rcpt. Line")
+    var
+        PurchaseHeader: Record "Purchase Header";
+    begin
+        if PurchaseHeader.Get(PurchaseLine."Document Type", PurchaseLine."Document No.") then begin
+            if PurchaseHeader."DG No. Guide Recep./Origen DUA" = '' then
+                PurchaseHeader."DG No. Guide Recep./Origen DUA" := PurchRcptLine."DG No. Guide Recep./Origen DUA"
+            else
+                PurchaseHeader."DG No. Guide Recep./Origen DUA" += '|' + PurchRcptLine."DG No. Guide Recep./Origen DUA";
+            PurchaseHeader.Modify();
+        end;
+    end;
 
     var
         DGPurchaseRequestHeader: Record "DG Purchase Request Header";

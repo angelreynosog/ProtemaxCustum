@@ -17,12 +17,13 @@ page 80103 "DG General Journal"
                 field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;
+                    Editable = false;
                     ToolTip = 'Specifies the value of the Code field.';
                 }
                 field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Code field.';
+                    ToolTip = 'Specifies the value of the Description field.';
                 }
                 field("Start Date"; Rec."Start Date")
                 {
@@ -74,17 +75,14 @@ page 80103 "DG General Journal"
         }
     }
 
-
-
     local procedure Confirmessage()
     var
-        DGManagament: Codeunit "DG Managament";
         Text001Lbl: Label 'You want to register record %1';
     begin
         if not Dialog.Confirm(StrSubstNo(Text001Lbl, Rec.Code), true) then
             exit
         else begin
-            DGManagament.PostedDGJournal(Rec);
+            Rec.PostedDGJournal(Rec.Code);
             CurrPage.Close();
         end;
     end;

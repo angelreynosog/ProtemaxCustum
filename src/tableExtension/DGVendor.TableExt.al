@@ -2,14 +2,14 @@ tableextension 80101 "DG Vendor" extends Vendor
 {
     fields
     {
-        field(80100; "DG General Quote Vendor"; Boolean)
+        field(80100; "DG Generic Vendor"; Boolean)
         {
-            Caption = 'General Quote Vendor';
+            Caption = 'DG Generic Vendor';
             DataClassification = CustomerContent;
 
             trigger OnValidate()
             begin
-                if "DG General Quote Vendor" then
+                if "DG Generic Vendor" then
                     ValidateMoreVendor();
             end;
         }
@@ -22,7 +22,7 @@ tableextension 80101 "DG Vendor" extends Vendor
         VendorMoreErr: Label 'It is not possible to select more than one supplier with this option.';
     begin
         Vendor.Reset();
-        Vendor.SetRange("DG General Quote Vendor", true);
+        Vendor.SetRange("DG Generic Vendor", true);
         CountRecord := Vendor.Count;
 
         if CountRecord = 1 then

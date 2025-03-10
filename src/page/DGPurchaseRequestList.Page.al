@@ -27,7 +27,7 @@ page 80102 "DG Purchase Request List"
                 field("Create Date"; Rec."Create Date")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the User Id field.';
+                    ToolTip = 'Specifies the value of the Create Date field.';
                 }
                 field("User Id"; Rec."User Id")
                 {

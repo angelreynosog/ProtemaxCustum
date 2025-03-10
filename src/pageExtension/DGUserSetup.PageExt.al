@@ -4,9 +4,9 @@ pageextension 80100 "DG User Setup" extends "User Setup"
     {
         addlast(Control1)
         {
-            field("Generate Purchase Quote"; Rec."Generate Purchase Quote")
+            field("Generate Request Purchase"; Rec."Generate Request Purchase")
             {
-                ToolTip = 'Generate Purchase Quote';
+                ToolTip = 'Generate Request Purchase';
                 ApplicationArea = All;
             }
         }

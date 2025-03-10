@@ -57,7 +57,6 @@ page 80112 "DG Detraction Card"
                     PurchInvHeader: Record "Purch. Inv. Header";
                     DGDetractionLine: Record "DG Detraction Line";
                     GeneralLedgerSetup: Record "General Ledger Setup";
-
                     Line: Integer;
                     Answer: Boolean;
                     Texto1Lbl: Label 'Are you sure you can get detraction documents?';

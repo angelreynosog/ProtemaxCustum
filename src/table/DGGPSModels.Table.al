@@ -1,6 +1,6 @@
 table 80109 "DG GPS Models"
 {
-    Caption = 'DG GPS Brands';
+    Caption = 'DG GPS Models';
     DataClassification = CustomerContent;
 
     fields
@@ -12,9 +12,9 @@ table 80109 "DG GPS Models"
             Editable = false;
             DataClassification = CustomerContent;
         }
-        field(2; "GPS Brands Code"; Integer)
+        field(2; "Brands Code"; Integer)
         {
-            Caption = 'GPS Brands Code';
+            Caption = 'Brands Code';
             TableRelation = "DG GPS Brands".Code;
             DataClassification = CustomerContent;
         }
@@ -36,7 +36,7 @@ table 80109 "DG GPS Models"
         {
             Clustered = true;
         }
-        key(Key2; "GPS Brands Code", Description)
+        key(Key2; "Brands Code", Description)
         {
 
         }

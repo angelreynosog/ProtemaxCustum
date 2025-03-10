@@ -33,7 +33,7 @@ table 80102 "DG Entry Purchase Request"
         }
         field(6; "No."; Code[20])
         {
-            Caption = 'Item No.';
+            Caption = 'No.';
             TableRelation = if (Type = const(" ")) "Standard Text"
             else
             if (Type = const("G/L Account")) "G/L Account" where("Direct Posting" = const(true), "Account Type" = const(Posting), Blocked = const(false))

@@ -9,5 +9,10 @@ tableextension 80104 "DG Purch. Inv. Header" extends "Purch. Inv. Header"
             Editable = false;
             DataClassification = CustomerContent;
         }
+        field(80101; "DG No. Guide Recep./Origen DUA"; Text[1024])
+        {
+            Caption = 'No. Guide Recep./Origen DUA/Direct Invoice';
+            DataClassification = CustomerContent;
+        }
     }
 }

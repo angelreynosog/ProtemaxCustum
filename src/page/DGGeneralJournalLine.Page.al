@@ -6,6 +6,7 @@ page 80104 "DG General Journal Line"
     DelayedInsert = true;
     LinksAllowed = false;
     MultipleNewLines = true;
+    Editable = false;
 
     layout
     {

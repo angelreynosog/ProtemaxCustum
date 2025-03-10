@@ -44,12 +44,12 @@ page 80107 "DG Entry Purchase Request"
                 field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Item Description field.';
+                    ToolTip = 'Specifies the value of the Description field.';
                 }
                 field("Description 2"; Rec."Description 2")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Item Description 2 field.';
+                    ToolTip = 'Specifies the value of the Description 2 field.';
                 }
                 field("Inventory Total"; Rec."Inventory Total")
                 {

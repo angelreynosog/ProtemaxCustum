@@ -4,9 +4,8 @@ pageextension 80101 "DG Vendor Card" extends "Vendor Card"
     {
         addlast(General)
         {
-            field("DG General Quote Vendor"; Rec."DG General Quote Vendor")
+            field("DG Generic Vendor"; Rec."DG Generic Vendor")
             {
-                Caption = 'General Quote Vendor';
                 ApplicationArea = All;
             }
         }

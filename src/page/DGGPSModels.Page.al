@@ -15,9 +15,9 @@ page 80116 "DG GPS Models"
                 {
                     ToolTip = 'Specifies the value of the Code field.';
                 }
-                field("GPS Brands Code"; Rec."GPS Brands Code")
+                field("Brands Code"; Rec."Brands Code")
                 {
-                    ToolTip = 'Specifies the value of the GPS Brands Code field.';
+                    ToolTip = 'Specifies the value of the Brands Code field.';
                 }
                 field(Description; Rec.Description)
                 {
