@@ -5,7 +5,7 @@ page 80119 "DG Setup Custom"
     ApplicationArea = All;
     Caption = 'DG Setup Custom';
     PageType = Card;
-    SourceTable = "DG Setup Custom";
+    SourceTable = "DG Protemax Setup Custom";
     UsageCategory = Administration;
 
     layout
@@ -35,6 +35,19 @@ page 80119 "DG Setup Custom"
                 {
                     ToolTip = 'Specifies the value of the Jnl Batch Name Detraction field.';
                 }
+            }
+            group("Field Service CRM")
+            {
+                Caption = 'Field Service CRM';
+                field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
+                {
+                    ToolTip = 'Specifies the value of the Gen. Prod. Posting Group field.';
+                }
+                field("VAT Prod. Posting Group"; Rec."VAT Prod. Posting Group")
+                {
+                    ToolTip = 'Specifies the value of the VAT Prod. Posting Group field.';
+                }
+
             }
         }
     }

@@ -50,11 +50,11 @@ table 80104 "DG General Journal"
 
     procedure PostedDGJournal(CodeIn: Code[20])
     begin
-        if not DGSetupCustom.Get() then
+        if not DGProtemaxSetupCustom.Get() then
             exit;
 
-        DGSetupCustom.TestField("Jnl. Templ. Name Payroll");
-        DGSetupCustom.TestField("Jnl Batch Name Payroll");
+        DGProtemaxSetupCustom.TestField("Jnl. Templ. Name Payroll");
+        DGProtemaxSetupCustom.TestField("Jnl Batch Name Payroll");
 
         ValidationDimension(CodeIn);
         InsertJournalLine(CodeIn);
@@ -66,8 +66,8 @@ table 80104 "DG General Journal"
     begin
         GenJournalLine.Reset();
         GenJournalLine.SetCurrentKey("Journal Template Name", "Journal Batch Name", "Line No.");
-        GenJournalLine.SetRange("Journal Template Name", DGSetupCustom."Jnl. Templ. Name Payroll");
-        GenJournalLine.SetRange("Journal Batch Name", DGSetupCustom."Jnl Batch Name Payroll");
+        GenJournalLine.SetRange("Journal Template Name", DGProtemaxSetupCustom."Jnl. Templ. Name Payroll");
+        GenJournalLine.SetRange("Journal Batch Name", DGProtemaxSetupCustom."Jnl Batch Name Payroll");
         if not GenJournalLine.IsEmpty() then
             exit(GenJournalLine."Line No.");
     end;
@@ -94,8 +94,8 @@ table 80104 "DG General Journal"
     begin
         GenJournalLine.Reset();
         GenJournalLine.SetCurrentKey("Journal Template Name", "Journal Batch Name", "Line No.");
-        GenJournalLine.SetRange("Journal Template Name", DGSetupCustom."Jnl. Templ. Name Payroll");
-        GenJournalLine.SetRange("Journal Batch Name", DGSetupCustom."Jnl Batch Name Payroll");
+        GenJournalLine.SetRange("Journal Template Name", DGProtemaxSetupCustom."Jnl. Templ. Name Payroll");
+        GenJournalLine.SetRange("Journal Batch Name", DGProtemaxSetupCustom."Jnl Batch Name Payroll");
         GenJournalLine.SetRange("Document No.", CodeIn);
         if not GenJournalLine.IsEmpty() then
             GenJournalLine.DeleteAll();
@@ -105,8 +105,8 @@ table 80104 "DG General Journal"
         DGGeneralJournalLine.SetRange(Code, CodeIn);
         if DGGeneralJournalLine.FindSet() then
             repeat
-                GenJournalLine."Journal Template Name" := DGSetupCustom."Jnl. Templ. Name Payroll";
-                GenJournalLine."Journal Batch Name" := DGSetupCustom."Jnl Batch Name Payroll";
+                GenJournalLine."Journal Template Name" := DGProtemaxSetupCustom."Jnl. Templ. Name Payroll";
+                GenJournalLine."Journal Batch Name" := DGProtemaxSetupCustom."Jnl Batch Name Payroll";
                 GenJournalLine."Line No." := GenJlnLineLastLine() + 10000;
                 GenJournalLine.Validate("Document No.", DGGeneralJournalLine.Code);
                 GenJournalLine.Validate("Posting Date", Rec."End Date");
@@ -179,6 +179,6 @@ table 80104 "DG General Journal"
     end;
 
     var
-        DGSetupCustom: Record "DG Setup Custom";
+        DGProtemaxSetupCustom: Record "DG Protemax Setup Custom";
         GeneralLedgerSetup: Record "General Ledger Setup";
 }

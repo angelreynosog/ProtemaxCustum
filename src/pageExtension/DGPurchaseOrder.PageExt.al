@@ -9,12 +9,5 @@ pageextension 80107 "DG Purchase Order" extends "Purchase Order"
                 ApplicationArea = All;
             }
         }
-        addafter("Due Date")
-        {
-            field("DG No. Guide Recep./Origen DUA"; Rec."DG No. Guide Recep./Origen DUA")
-            {
-                ApplicationArea = All;
-            }
-        }
     }
 }

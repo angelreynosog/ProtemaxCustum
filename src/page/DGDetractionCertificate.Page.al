@@ -4,7 +4,7 @@ page 80114 "DG Detraction Certificate"
     Caption = 'DG Detraction Certificate';
     PageType = List;
     SourceTable = "DG Detraction Line";
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     InsertAllowed = false;
     DeleteAllowed = false;
 

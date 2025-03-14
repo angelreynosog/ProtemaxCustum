@@ -27,6 +27,24 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Jnl. Templ. Name Detraction - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 930542937 - Control 1846683197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service CRM</source>
+          <target state="translated">Field Service CRM</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Field Service CRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 930542937 - Control 2139693550 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Gen. Prod. Posting Group field.</source>
+          <target state="translated">Especifica el valor del campo Grupo contable prod. gen.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Gen. Prod. Posting Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 930542937 - Control 236064653 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the VAT Prod. Posting Group field.</source>
+          <target state="translated">Especifica el valor del campo Grupo contable IVA prod.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control VAT Prod. Posting Group - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 930542937 - Control 3324647799 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Payroll</source>
           <target state="translated">Nomina</target>
@@ -555,6 +573,54 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG GPS Models - Field Locked - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 774464793 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DG Protemax Setup Custom</source>
+          <target state="translated">DG Configuración Protemax</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 2139693550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Prod. Posting Group</source>
+          <target state="translated">Grupo contable prod. gen.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Gen. Prod. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 2919991158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch Name Detraction</source>
+          <target state="translated">Nombre sección detracción</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Jnl Batch Name Detraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 1863175570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch Name Payroll</source>
+          <target state="translated">Nombre sección nomina</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Jnl Batch Name Payroll - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 2146542306 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Template Nam Detraction</source>
+          <target state="translated">Libros diario general detracción</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Jnl. Templ. Name Detraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 4016275686 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Template Nam Payroll</source>
+          <target state="translated">Libros diario general nomina</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Jnl. Templ. Name Payroll - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target state="translated">Clave primaria</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 236064653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Prod. Posting Group</source>
+          <target state="translated">Grupo contable IVA prod.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field VAT Prod. Posting Group - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 666547410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Request Header</source>
           <target state="translated">Cab. compra solicitud</target>
@@ -728,42 +794,6 @@
           <target state="translated">Cód. proveedor</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Vendor Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 930542937 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>DG Setup Custom</source>
-          <target state="translated">DG Configuración personalizada</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Setup Custom - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 930542937 - Field 2919991158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Journal Batch Name Detraction</source>
-          <target state="translated">Nombre sección detracción</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Setup Custom - Field Jnl Batch Name Detraction - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 930542937 - Field 1863175570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Journal Batch Name Payroll</source>
-          <target state="translated">Nombre sección nomina</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Setup Custom - Field Jnl Batch Name Payroll - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 930542937 - Field 2146542306 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Journal Template Nam Detraction</source>
-          <target state="translated">Libros diario general detracción</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Setup Custom - Field Jnl. Templ. Name Detraction - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 930542937 - Field 4016275686 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Journal Template Nam Payroll</source>
-          <target state="translated">Libros diario general nomina</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Setup Custom - Field Jnl. Templ. Name Payroll - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 930542937 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Primary Key</source>
-          <target state="translated">Clave primaria</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table DG Setup Custom - Field Primary Key - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 3694108872 - Method 2782714252 - NamedType 2341273212" size-unit="char" translate="yes" xml:space="preserve">
           <source>There must be a generic vendor.</source>
@@ -1115,427 +1145,427 @@
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 2363328873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Document Type field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Tipo documento.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Document Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Entry No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo No Mov.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Entry No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 2037375551 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Inventory Posting Group field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Grupo contable inventario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Inventory Posting Group - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 3188731580 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Inventory Total field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Total inventario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Inventory Total - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 1988458656 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Inventory Without Obs. Whs. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Inventario fuera obsoleto.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Inventory Without Obs. Whs. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 3320823955 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Line No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Línea.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Line No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Item No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo N° producto.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 2202932243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Order No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo N° orden.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Order No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 4145127342 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Order Status field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Orden estado.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Order Status - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 726131669 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Quantity Requested field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo cantidad requerida.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Quantity Requested - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 1438758551 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Request Date field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Fecha requerida.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Request Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 381961415 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Unit Cost field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Costo unitario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Unit Cost - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 3776794752 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the User Id field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Id. usuario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control User Id - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 2182398645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the User Id Authorized field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Id. usuario autorizó.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control User Id Authorized - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4106287663 - Control 2853492251 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Vendor Code field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Código proveedor.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Entry Purchase Request - Control Vendor Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG General Journal</source>
-          <target state="needs-translation"/>
+          <target state="translated">DG Diario Generales</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Method 3780720488 - NamedType 1196336482" size-unit="char" translate="yes" xml:space="preserve">
           <source>You want to register record %1</source>
-          <target state="needs-translation"/>
+          <target state="translated">Desea registrar un registro %1</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Method Confirmessage - NamedType Text001Lbl</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Control 2606297334 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lines</source>
-          <target state="needs-translation"/>
+          <target state="translated">Línea</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Control DGGeneralJournalLine - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
-          <target state="needs-translation"/>
+          <target state="translated">General</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Control General - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Code field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Código.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Control Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Descripción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Control Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Control 2649176925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the End Date field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Fecha final.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Control End Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Control 3465500804 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Month field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Mes.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Control Month - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Control 474480784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Start Date field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Fecha inicial.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Control Start Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Action 3106002577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>F&amp;unctions</source>
-          <target state="needs-translation"/>
+          <target state="translated">Funciones</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Action F&amp;unctions - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Action 2282416948 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Executes the Post action.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Ejecuta la acción registrar.</target>
           <note from="Developer" annotates="general" priority="2">ESP="Ejecuta la acción Registrar."</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Action Post - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Action 2282416948 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Post</source>
-          <target state="needs-translation"/>
+          <target state="translated">Registrar</target>
           <note from="Developer" annotates="general" priority="2">ESP="Registrar"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Action Post - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG General Jounal Line</source>
-          <target state="needs-translation"/>
+          <target state="translated">DG Diario General Línea</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 1622979514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Account No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo N° cuenta.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Account No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 636392376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Amount field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Importe.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Amount - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Code field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Código.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 3436876055 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Code System Id field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Id. Código Sistema.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Code System Id - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Descripción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 2692434323 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimension 1 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Dimension 1.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Dimension 1 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 310556878 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimension 2 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Dimension 2.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Dimension 2 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 3967827557 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimension 3 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Dimension 3.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Dimension 3 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 779344472 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimension 4 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Dimension 4.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Dimension 4 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 141647855 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimension 5 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Dimension 5.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Dimension 5 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 2054737706 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimension 6 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Dimension 6.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Dimension 6 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 1417041089 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimension 7 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Dimension 7.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Dimension 7 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 4136736580 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimension 8 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Dimension 8.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Dimension 8 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Control 3320823955 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Line No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo N° línea.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal Line - Control Line No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1002717514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG General Journal List</source>
-          <target state="needs-translation"/>
+          <target state="translated">DG Lista diario generales</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal List - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1002717514 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo N°.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal List - Control Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1002717514 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Descripción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal List - Control Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1002717514 - Control 2649176925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the User Id field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Id. Usuario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal List - Control End Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1002717514 - Control 474480784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the User Id field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Id. Usuario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal List - Control Start Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3846126697 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG GPS Brands</source>
-          <target state="needs-translation"/>
+          <target state="translated">DG GPS Marcas</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Brands - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3846126697 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Code field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Código.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Brands - Control Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3846126697 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Descripción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Brands - Control Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3846126697 - Control 3846472926 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Locked field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Bloqueado.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Brands - Control Locked - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1994182317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG GPS Models</source>
-          <target state="needs-translation"/>
+          <target state="translated">DG GPS Modelos.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Models - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1994182317 - Control 3421213807 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Brands Code field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Código marcas.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Models - Control Brands Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1994182317 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Code field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Código.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Models - Control Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1994182317 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Descripción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Models - Control Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1994182317 - Control 3846472926 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Locked field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Bloqueado1.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG GPS Models - Control Locked - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 666547410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG Purchase Request Header</source>
-          <target state="needs-translation"/>
+          <target state="translated">DG Compra Reposición Cabecera</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 666547410 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
-          <target state="needs-translation"/>
+          <target state="translated">General</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Control General - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 666547410 - Control 496290540 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Create Date field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Fecha creación.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Control Create Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 666547410 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Descripción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Control Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 666547410 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo N°.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Control No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 666547410 - Control 3776794752 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the User Id field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Id. Usuario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Control User Id - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 666547410 - Control 2839216364 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lines</source>
-          <target state="needs-translation"/>
+          <target state="translated">Línea</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Control PurchRequestLines - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 411531942 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Base Unit of Measure field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Unidad Medida Base.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Base Unit of Measure - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Descripción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 47657272 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description 2 field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Descripción 2.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Description 2 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 2037375551 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Inventory Posting Group field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Grupo registro inventario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Inventory Posting Group - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 3188731580 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Inventory Total field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Total inventario.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Inventory Total - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 1988458656 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Inventory Without Obs. Whs. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Inventario fuera obsoleto.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Inventory Without Obs. Whs. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the No. field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo N°.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Control 1195444726 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Qty. Requested field.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Especifica el valor del campo Cantid. requerida.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Qty. Requested - Property ToolTip</note>
         </trans-unit>
@@ -1577,37 +1607,37 @@
         </trans-unit>
         <trans-unit id="Page 177378425 - Action 3462295906 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Executes the Comments action.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Ejecuta la acción Comentario</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Action DG Comment Line - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Action 3462295906 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Comments</source>
-          <target state="needs-translation"/>
+          <target state="translated">Comentario</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Action DG Comment Line - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Action 483893768 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Executes the Generate Requisition action.</source>
-          <target state="needs-translation"/>
+          <target state="translated">Ejecuta la acción Genera Requsición.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Action DG Generate Requisition - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Action 483893768 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Generate Requisition</source>
-          <target state="needs-translation"/>
+          <target state="translated">Genera Requsición</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Action DG Generate Requisition - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Action 483893768 - Method 1377591017 - NamedType 3494758960" size-unit="char" translate="yes" xml:space="preserve">
           <source>There are lines with quantities in zero</source>
-          <target state="needs-translation"/>
+          <target state="translated">Hay líneas con cantidades en cero.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Action DG Generate Requisition - Method OnAction - NamedType ErrorQtyZeroLbl</note>
         </trans-unit>
         <trans-unit id="Page 177378425 - Action 483893768 - Method 1377591017 - NamedType 32699181" size-unit="char" translate="yes" xml:space="preserve">
           <source>Requisition date should not be empty.</source>
-          <target state="needs-translation"/>
+          <target state="translated">La fecha de solicitud no debe estar vacía.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Action DG Generate Requisition - Method OnAction - NamedType ErrorDateEmplyLbl</note>
         </trans-unit>
@@ -1625,7 +1655,7 @@
         </trans-unit>
         <trans-unit id="Page 1839426941 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG Purchase Request List</source>
-          <target state="needs-translation"/>
+          <target state="translated">DG Lista solicitud compra</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request List - Property Caption</note>
         </trans-unit>
@@ -1655,13 +1685,13 @@
         </trans-unit>
         <trans-unit id="Page 3942949144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Invoice</source>
-          <target state="needs-translation"/>
+          <target state="translated">Factura ventas</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page dg Sales Header API - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 316571167 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Line</source>
-          <target state="needs-translation"/>
+          <target state="translated">Factura línea</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales Line API - Property Caption</note>
         </trans-unit>
@@ -2187,6 +2217,12 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension DG Purchases &amp; Payables Setup - Control Batch Payment Detraction - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 950980695 - Control 3397758163 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 337631938">
+          <source>Non-Billable Invoice</source>
+          <target state="translated">Factura sin Factura Fiscal</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DG User Setup - Control DG Non-Billable Invoice - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 950980695 - Control 3561078315 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 337631938">
           <source>Generate Request Purchase</source>
           <target state="translated">Genera solicitud de compra</target>
@@ -2196,14 +2232,12 @@
         <trans-unit id="TableExtension 1674483427 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
           <target state="translated">Nº Guía Recep./DUA Origen/Factura Directa</target>
-          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Item Journal Line - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1834434529 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
           <target state="translated">Nº Guía Recep./DUA Origen/Factura Directa</target>
-          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Item Ledger Entry - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
@@ -2216,7 +2250,6 @@
         <trans-unit id="TableExtension 948297851 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
           <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
           <target state="translated">Nº Guía Recep./DUA Origen/Factura Directa</target>
-          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purch. Inv. Header - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
@@ -2229,7 +2262,6 @@
         <trans-unit id="TableExtension 1041129159 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1052755578">
           <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
           <target state="translated">Nº Guía Recep./DUA Origen/Factura Directa</target>
-          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purch. Rcpt. Header - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
@@ -2242,7 +2274,6 @@
         <trans-unit id="TableExtension 3539767945 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
           <target state="translated">Nº Guía Recep./DUA Origen/Factura Directa</target>
-          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchase Header - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
@@ -2276,11 +2307,65 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchases &amp; Payables Setup - Field DG Serie Batch Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 599156320 - Field 2388734387 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Completion Consumption</source>
+          <target state="translated">Finalizacíon consumo</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field Completion Consumption - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 599156320 - Field 2388734387 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source> ,Yes,No</source>
+          <target state="translated"> ,Sí,No</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field Completion Consumption - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 599156320 - Field 3397758163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Non-Billable Invoice</source>
+          <target state="translated">Factura sin Factura Fiscal</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field DG Non-Billable Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 599156320 - Field 2841965037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Order Terminated</source>
+          <target state="translated">OT</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field Order Terminated - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2685827359 - Field 2388734387 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Completion Consumption</source>
+          <target state="translated">Finalizacíon consumo</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Header - Field Completion Consumption - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2685827359 - Field 2388734387 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source> ,Yes,No</source>
+          <target state="translated"> ,Sí,No</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Header - Field Completion Consumption - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2685827359 - Field 3397758163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Non-Billable Invoice</source>
+          <target state="translated">Factura sin Factura Fiscal</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Header - Field DG Non-Billable Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2685827359 - Field 2841965037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Order Terminated</source>
+          <target state="translated">OT</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Header - Field Order Terminated - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3298178183 - Field 3436876055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Code System Id</source>
           <target state="translated">Código Id Sistema</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Line - Field Code System Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 950980695 - Field 3397758163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
+          <source>Non-Billable Invoice</source>
+          <target state="translated">Factura sin Factura Fiscal</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG User Setup - Field DG Non-Billable Invoice - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 950980695 - Field 3561078315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
           <source>Generate Request Purchase</source>
@@ -2290,49 +2375,55 @@
         </trans-unit>
         <trans-unit id="TableExtension 1450636081 - Method 95952953 - NamedType 2289259200" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 1450636081">
           <source>It is not possible to select more than one supplier with this option.</source>
-          <target state="needs-translation"/>
+          <target state="translated">No es posible seleccionar más de un proveedor con esta opción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Vendor - Method ValidateMoreVendor - NamedType VendorMoreErr</note>
         </trans-unit>
         <trans-unit id="TableExtension 1450636081 - Field 1465517194 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1936001480">
           <source>DG Generic Vendor</source>
-          <target state="needs-translation"/>
+          <target state="translated">DG Proveedor genérico</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Vendor - Field DG Generic Vendor - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3809991807 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
+          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <target state="translated">Nº Guía Recep./DUA Origen/Factura Directa</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Warehouse Receipt Header - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 3643693479 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
-          <target state="needs-translation"/>
+          <target state="translated"> </target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Enum DG Document Type Request - EnumValue   - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3643693479 - EnumValue 3351914939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Request</source>
-          <target state="needs-translation"/>
+          <target state="translated">Solicitud</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Enum DG Document Type Request - EnumValue Request - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 935962178 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
-          <target state="needs-translation"/>
+          <target state="translated"> </target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Enum DG Purchase Quote Status - EnumValue   - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 935962178 - EnumValue 3351914939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Request</source>
-          <target state="needs-translation"/>
+          <target state="translated">Solicitud</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Enum DG Purchase Quote Status - EnumValue Request - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 935962178 - EnumValue 3741122412 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Requested</source>
-          <target state="needs-translation"/>
+          <target state="translated">Solicitado</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Enum DG Purchase Quote Status - EnumValue Requested - Property Caption</note>
         </trans-unit>
         <trans-unit id="EnumExtension 337701178 - EnumValue 3351914939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 337701178">
           <source>Request</source>
-          <target state="needs-translation"/>
+          <target state="translated">Solicitud</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Attachment Document Type - EnumValue Request - Property Caption</note>
         </trans-unit>

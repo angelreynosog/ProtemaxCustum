@@ -2,6 +2,14 @@ pageextension 80115 "DG Sales Invoice" extends "Sales Invoice"
 {
     layout
     {
+        addlast(General)
+        {
+            field("DG Non-Billable Invoice"; Rec."DG Non-Billable Invoice")
+            {
+                ApplicationArea = All;
+            }
+
+        }
         addlast("Invoice Details")
         {
             field("Applies-to Doc. Type"; Rec."Applies-to Doc. Type")
@@ -12,7 +20,6 @@ pageextension 80115 "DG Sales Invoice" extends "Sales Invoice"
             {
                 ApplicationArea = All;
             }
-
         }
     }
 }

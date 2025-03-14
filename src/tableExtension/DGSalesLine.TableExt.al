@@ -8,5 +8,5 @@ tableextension 80106 "DG Sales Line" extends "Sales Line"
             TableRelation = "Sales Header".SystemId;
             DataClassification = CustomerContent;
         }
-    }   
+    }
 }

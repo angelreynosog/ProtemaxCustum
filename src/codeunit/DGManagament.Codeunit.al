@@ -249,14 +249,12 @@ codeunit 80100 "DG Managament"
     [EventSubscriber(ObjectType::Table, Database::"VAT Amount Line", 'OnAfterVATAmountText', '', true, true)]
     local procedure "VAT Amount Line_OnAfterVATAmountText"(VATPercentage: Decimal; var Result: Text[30])
     var
-        //Text000Lbl: Label '%1% IGV', Comment = '%1 = Percentage';
         Text001Lbl: Label 'VAT Amount';
         Text002Lbl: Label 'IGV', Comment = '%1 = Percentage';
     begin
         if VATPercentage = 0 then
             Result := Text001Lbl
         else
-            //Result := StrSubstNo(Text000Lbl, VATPercentage);
             Result := Text002Lbl;
     end;
 
@@ -323,12 +321,6 @@ codeunit 80100 "DG Managament"
         NewItemLedgEntry."DG No. Guide Recep./Origen DUA" := ItemJournalLine."DG No. Guide Recep./Origen DUA";
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Purchase Document", 'OnBeforeManualReleasePurchaseDoc', '', true, true)]
-    local procedure "Release Purchase Document_OnBeforeManualReleasePurchaseDoc"(var PurchaseHeader: Record "Purchase Header")
-    begin
-        PurchaseHeader.TestField("DG No. Guide Recep./Origen DUA");
-    end;
-
     [EventSubscriber(ObjectType::Table, Database::"Purch. Rcpt. Line", 'OnAfterCopyFromPurchRcptLine', '', true, true)]
     local procedure "Purch. Rcpt. Line_OnAfterCopyFromPurchRcptLine"(var PurchaseLine: Record "Purchase Line"; PurchRcptLine: Record "Purch. Rcpt. Line")
     var
@@ -342,6 +334,30 @@ codeunit 80100 "DG Managament"
             PurchaseHeader.Modify();
         end;
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnAfterCheckTrackingAndWarehouseForReceive', '', true, true)]
+    local procedure "Purch.-Post_OnAfterCheckTrackingAndWarehouseForReceive"(var TempWarehouseReceiptHeader: Record "Warehouse Receipt Header" temporary; var PurchaseHeader: Record "Purchase Header")
+    begin
+        PurchaseHeader."DG No. Guide Recep./Origen DUA" := TempWarehouseReceiptHeader."DG No. Guide Recep./Origen DUA";
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnValidateNoOnAfterUpdateUnitPrice', '', true, true)]
+    local procedure "Sales Line_OnValidateNoOnAfterUpdateUnitPrice"(var SalesLine: Record "Sales Line")
+    var
+        SalesHeader: Record "Sales Header";
+        DGProtemaxSetupCustom: Record "DG Protemax Setup Custom";
+    begin
+        if SalesHeader.Get(SalesLine."Document Type", SalesLine."Document No.") then
+            if SalesHeader."DG Non-Billable Invoice" then
+                if (SalesLine.Type = SalesLine.Type::Item) and (SalesLine."Document Type" = SalesLine."Document Type"::Invoice) then begin
+                    DGProtemaxSetupCustom.Get();
+                    DGProtemaxSetupCustom.TestField("Gen. Prod. Posting Group");
+                    DGProtemaxSetupCustom.TestField("VAT Prod. Posting Group");
+                    SalesLine."Gen. Prod. Posting Group" := DGProtemaxSetupCustom."Gen. Prod. Posting Group";
+                    SalesLine."VAT Prod. Posting Group" := DGProtemaxSetupCustom."VAT Prod. Posting Group";
+                end;
+    end;
+
 
     var
         DGPurchaseRequestHeader: Record "DG Purchase Request Header";

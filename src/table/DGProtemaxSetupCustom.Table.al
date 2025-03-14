@@ -1,6 +1,6 @@
-table 80110 "DG Setup Custom"
+table 80110 "DG Protemax Setup Custom"
 {
-    Caption = 'DG Setup Custom';
+    Caption = 'DG Protemax Setup Custom';
     DataClassification = CustomerContent;
 
     fields
@@ -32,6 +32,16 @@ table 80110 "DG Setup Custom"
             Caption = 'Journal Batch Name Detraction';
             DataClassification = CustomerContent;
             TableRelation = "Gen. Journal Batch".Name where("Journal Template Name" = field("Jnl. Templ. Name Detraction"));
+        }
+        field(6; "Gen. Prod. Posting Group"; Code[20])
+        {
+            Caption = 'Gen. Prod. Posting Group';
+            TableRelation = "Gen. Product Posting Group";
+        }
+        field(7; "VAT Prod. Posting Group"; Code[20])
+        {
+            Caption = 'VAT Prod. Posting Group';
+            TableRelation = "VAT Product Posting Group";
         }
     }
 
