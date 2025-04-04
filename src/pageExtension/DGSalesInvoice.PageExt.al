@@ -6,6 +6,7 @@ pageextension 80115 "DG Sales Invoice" extends "Sales Invoice"
         {
             field("DG Non-Billable Invoice"; Rec."DG Non-Billable Invoice")
             {
+                Editable = false;
                 ApplicationArea = All;
             }
 

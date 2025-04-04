@@ -24,6 +24,11 @@ page 80102 "DG Purchase Request List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Description field.';
                 }
+                field("Status Request"; Rec."Status Request")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Status Request field.';
+                }
                 field("Create Date"; Rec."Create Date")
                 {
                     ApplicationArea = All;

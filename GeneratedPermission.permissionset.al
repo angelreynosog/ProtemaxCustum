@@ -1,5 +1,7 @@
 namespace extensionPermisionGD;
 
+using ProtemaxCustum.ProtemaxCustum;
+
 permissionset 80100 GeneratedPermission
 {
     Assignable = true;
@@ -43,5 +45,10 @@ permissionset 80100 GeneratedPermission
         page "DG Detractions List" = X,
         page "DG GPS Brands" = X,
         page "DG GPS Models" = X,
-        query "Customer Query API" = X;
+        query "Customer Query API" = X,
+        tabledata "DG Protemax Setup Custom" = RIMD,
+        table "DG Protemax Setup Custom" = X,
+        page "DG Sales Invoice API" = X,
+        page "DG Sales Invoice Line API" = X,
+        page "DG Setup Custom" = X;
 }

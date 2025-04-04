@@ -1,4 +1,4 @@
-page 80101 "DG Purchase Request Line"
+page 80120 "DG Purch. Request Line Apprvd"
 {
     PageType = ListPart;
     SourceTable = "DG Purchase Request Line";
@@ -19,6 +19,7 @@ page 80101 "DG Purchase Request Line"
                     Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
                     ToolTip = 'Specifies the value of the Type field.';
                 }
+
                 field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
@@ -50,10 +51,27 @@ page 80101 "DG Purchase Request Line"
                 //     Visible = Rec.Type = Rec.Type::Item;
                 //     ToolTip = 'Specifies the value of the Inventory Without Obs. Whs. field.';
                 // }
+                // field("Inventory Posting Group"; Rec."Inventory Posting Group")
+                // {
+                //     ApplicationArea = All;
+                //     Visible = Rec.Type = Rec.Type::Item;
+                //     ToolTip = 'Specifies the value of the Inventory Posting Group field.';
+                // }
+                field("Vendor Code"; Rec."Vendor Code")
+                {
+                    ApplicationArea = All;
+                    Importance = Standard;
+                    ToolTip = 'Specifies the value of the Vendor Code field.';
+                }
                 field("Base Unit of Measure"; Rec."Base Unit of Measure")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Base Unit of Measure field.';
+                }
+                field("Unit Cost"; Rec."Unit Cost")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Unit Cost field.';
                 }
                 field(Quantity; Rec.Quantity)
                 {
@@ -62,41 +80,23 @@ page 80101 "DG Purchase Request Line"
                     ToolTip = 'Specifies the value of the Quantity field.';
                     Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
                 }
-                field("Unit Cost"; Rec."Unit Cost")
+                field("Qty. to Requested"; Rec."Qty. to Requested")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Unit Cost field.';
+                    Importance = Standard;
+                    ToolTip = 'Specifies the value of the Qty. to Requested field.';
                 }
-                // field("Inventory Posting Group"; Rec."Inventory Posting Group")
-                // {
-                //     ApplicationArea = All;
-                //     Visible = Rec.Type = Rec.Type::Item;
-                //     ToolTip = 'Specifies the value of the Inventory Posting Group field.';
-                // }
-                // field("Vendor Code"; Rec."Vendor Code")
-                // {
-                //     ApplicationArea = All;
-                //     Importance = Standard;
-                //     ToolTip = 'Specifies the value of the Vendor Code field.';
-                // }
-
-                // field("Qty. to Requested"; Rec."Qty. to Requested")
-                // {
-                //     ApplicationArea = All;
-                //     Importance = Standard;
-                //     ToolTip = 'Specifies the value of the Qty. to Requested field.';
-                // }
-                // field("Qty. Requested"; Rec."Qty. Requested")
-                // {
-                //     ApplicationArea = All;
-                //     ToolTip = 'Specifies the value of the Qty. Requested field.';
-                // }
-                // field("Request Date"; Rec."Request Date")
-                // {
-                //     ApplicationArea = All;
-                //     Importance = Standard;
-                //     ToolTip = 'Specifies the value of the Request Date field.';
-                // }
+                field("Qty. Requested"; Rec."Qty. Requested")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Qty. Requested field.';
+                }
+                field("Request Date"; Rec."Request Date")
+                {
+                    ApplicationArea = All;
+                    Importance = Standard;
+                    ToolTip = 'Specifies the value of the Request Date field.';
+                }
             }
         }
     }
@@ -129,6 +129,32 @@ page 80101 "DG Purchase Request Line"
                     RecRef.GetTable(Rec);
                     DocumentAttachmentDetails.OpenForRecRef(RecRef);
                     DocumentAttachmentDetails.RunModal();
+                end;
+            }
+            action("DG Generate Requisition")
+            {
+                Caption = 'Generate Request';
+                ToolTip = 'Executes the Generate Request action.';
+                Image = ExecuteBatch;
+                ApplicationArea = All;
+                trigger OnAction()
+                var
+                    DGPurchaseRequestLine: Record "DG Purchase Request Line";
+                    DGPurchaseRequestHeader: Record "DG Purchase Request Header";
+                    DGManagament: Codeunit "DG Managament";
+                    RecordRef: RecordRef;
+                    RequestNotApprovedLbl: Label 'This application cannot be approved because you have not completed the process.';
+                begin
+                    DGPurchaseRequestHeader.Reset();
+                    DGPurchaseRequestHeader.SetRange("No.", DGPurchaseRequestLine."Document No.");
+                    DGPurchaseRequestHeader.SetRange("Document Type", DGPurchaseRequestLine."Document Type");
+                    DGPurchaseRequestHeader.SetFilter("Status Request", '%1|%2', DGPurchaseRequestHeader."Status Request"::" ", DGPurchaseRequestHeader."Status Request"::Approved);
+                    if not DGPurchaseRequestHeader.IsEmpty then
+                        Error(RequestNotApprovedLbl);
+
+                    CurrPage.SetSelectionFilter(DGPurchaseRequestLine);
+                    RecordRef.GetTable(DGPurchaseRequestLine);
+                    DGManagament.ConvertRequestPurchase(RecordRef);
                 end;
             }
         }

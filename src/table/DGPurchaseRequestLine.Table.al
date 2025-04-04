@@ -36,7 +36,13 @@ table 80101 "DG Purchase Request Line"
             else
             if (Type = const("Fixed Asset")) "Fixed Asset"
             else
-            if (Type = const(Item)) Item where(Blocked = const(false));
+            if (Type = const(Item)) Item where(Blocked = const(false))
+            else
+            if (Type = const("Charge (Item)")) "Item Charge"
+            else
+            if (Type = const("Allocation Account")) "Allocation Account"
+            else
+            if (Type = const(Resource)) Resource;
             DataClassification = CustomerContent;
 
             trigger OnValidate()
@@ -161,6 +167,31 @@ table 80101 "DG Purchase Request Line"
         }
     }
 
+    trigger OnModify()
+    var
+        DGPurchaseRequestHeader: Record "DG Purchase Request Header";
+        User: Record User;
+        UserSetup: Record "User Setup";
+        RequestNotApprovedLbl: Label 'You cannot modify this request, it is already approved.';
+    begin
+        DGPurchaseRequestHeader.Reset();
+        DGPurchaseRequestHeader.SetRange("No.", Rec."Document No.");
+        DGPurchaseRequestHeader.SetRange("Document Type", Rec."Document Type");
+        DGPurchaseRequestHeader.SetRange("Status Request", DGPurchaseRequestHeader."Status Request"::Approved);
+        if not DGPurchaseRequestHeader.IsEmpty then begin
+            User.Reset();
+            User.SetRange("User Name", UserId);
+            User.SetRange(State, User.State::Enabled);
+            if User.FindFirst() then begin
+                UserSetup.Reset();
+                UserSetup.SetRange("User ID", User."User Name");
+                UserSetup.SetRange("DG Approver Requestor OC", true);
+                if UserSetup.IsEmpty then
+                    Error(RequestNotApprovedLbl);
+            end;
+        end;
+    end;
+
     local procedure GetSearchFields(No: Code[20])
     var
         Item: Record Item;
@@ -211,5 +242,7 @@ table 80101 "DG Purchase Request Line"
                     Clear(FixedAsset);
         end;
     end;
+
+
 
 }

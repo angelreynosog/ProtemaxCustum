@@ -5,7 +5,6 @@ tableextension 80113 "DG Sales Invoice Header" extends "Sales Invoice Header"
         field(80100; "DG Non-Billable Invoice"; Boolean)
         {
             Caption = 'Non-Billable Invoice';
-            Editable = true;
         }
         field(80101; "Order Terminated"; Text[50])
         {

@@ -2,9 +2,9 @@ tableextension 80100 "DG User Setup" extends "User Setup"
 {
     fields
     {
-        field(80100; "Generate Request Purchase"; Boolean)
+        field(80100; "DG Approver Requestor OC"; Boolean)
         {
-            Caption = 'Generate Request Purchase';
+            Caption = 'Approver Requestor OC';
             DataClassification = CustomerContent;
         }
         field(80101; "DG Non-Billable Invoice"; Boolean)
@@ -12,4 +12,5 @@ tableextension 80100 "DG User Setup" extends "User Setup"
             Caption = 'Non-Billable Invoice';
         }
     }
+
 }
