@@ -8,6 +8,11 @@ pageextension 80118 "DG Sales Order List" extends "Sales Order List"
             {
                 ApplicationArea = All;
             }
+            field("DG Channel"; Rec."DG Channel")
+            {
+                ApplicationArea = All;
+                Editable = false;
+            }
         }
     }
 }

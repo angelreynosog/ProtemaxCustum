@@ -11,7 +11,7 @@ tableextension 80102 "DG Purchase Header" extends "Purchase Header"
         }
         field(80101; "DG No. Guide Recep./Origen DUA"; Text[1024])
         {
-            Caption = 'No. Guide Recep./Origen DUA/Direct Invoice';
+            Caption = 'No. Guide Recep.|Origen DUA|Direct Invoice';
             DataClassification = CustomerContent;
         }
     }

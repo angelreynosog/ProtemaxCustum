@@ -32,6 +32,29 @@ page 80117 "DG Sales Invoice API"
                 { }
                 field(nonBillableInvoice; Rec."DG Non-Billable Invoice")
                 { }
+                field(yourReference; Rec."Your Reference")
+                { }
+                field(directSales; Rec."DG Direct Sales")
+                { }
+                field(paymentTermsCode; Rec."Payment Terms Code")
+                { }
+                field(paymentMehodCode; Rec."Payment Method Code")
+                { }
+                field(customerPostingGroup; Rec."Customer Posting Group")
+                { }
+                field(externalDocumentNo; Rec."External Document No.")
+                { }
+                field(currencyCode; Rec."Currency Code")
+                { }
+                field(sunatDocument; Rec."SUNAT Document")
+                { }
+                field(postingNoSeries; Rec."Posting No. Series")
+                { }
+                field(channel; Rec."DG Channel")
+                { }
+                field(salesPerson; Rec."Salesperson Code")
+                { }
+
                 part(dgSaleInvoiceLine; "DG Sales Invoice Line API")
                 {
                     EntitySetName = 'dgSaleLine';

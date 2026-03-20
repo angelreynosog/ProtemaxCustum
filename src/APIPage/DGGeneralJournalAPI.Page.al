@@ -29,7 +29,6 @@ page 80108 "DG General Journal API"
                 { }
                 field(month; Rec.Month)
                 { }
-
                 part(dgGeneralJournalLine; "DG General Journal Line API")
                 {
                     EntitySetName = 'dgGeneralJournalLine';

@@ -9,6 +9,11 @@ pageextension 80115 "DG Sales Invoice" extends "Sales Invoice"
                 Editable = false;
                 ApplicationArea = All;
             }
+            field("DG Channel"; Rec."DG Channel")
+            {
+                ApplicationArea = All;
+                Editable = false;
+            }
 
         }
         addlast("Invoice Details")

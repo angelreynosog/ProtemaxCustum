@@ -2,7 +2,7 @@
   "id": "a2f9d730-c0b3-44ff-8dbb-9a5d04dae7c5",
   "name": "DG Protemax Custom",
   "publisher": "Ditech Group",
-  "version": "24.0.0.1",
+  "version": "24.0.0.7",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -15,7 +15,7 @@
       "id": "b154dd4c-9966-40d4-a9a4-74a8180d7efe",
       "name": "Localización Perú",
       "publisher": "Ditech",
-      "version": "18.1.1.14"
+      "version": "18.1.1.35"
     }   
   ],
   "screenshots": [],

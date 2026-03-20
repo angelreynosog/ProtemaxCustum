@@ -38,18 +38,6 @@ page 80101 "DG Purchase Request Line"
                     Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
                     ToolTip = 'Specifies the value of the Description 2 field.';
                 }
-                // field("Inventory Total"; Rec."Inventory Total")
-                // {
-                //     ApplicationArea = All;
-                //     Visible = Rec.Type = Rec.Type::Item;
-                //     ToolTip = 'Specifies the value of the Inventory Total field.';
-                // }
-                // field("Inventory Without Obs. Whs."; Rec."Inventory Without Obs. Whs.")
-                // {
-                //     ApplicationArea = All;
-                //     Visible = Rec.Type = Rec.Type::Item;
-                //     ToolTip = 'Specifies the value of the Inventory Without Obs. Whs. field.';
-                // }
                 field("Base Unit of Measure"; Rec."Base Unit of Measure")
                 {
                     ApplicationArea = All;
@@ -62,41 +50,6 @@ page 80101 "DG Purchase Request Line"
                     ToolTip = 'Specifies the value of the Quantity field.';
                     Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
                 }
-                field("Unit Cost"; Rec."Unit Cost")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Unit Cost field.';
-                }
-                // field("Inventory Posting Group"; Rec."Inventory Posting Group")
-                // {
-                //     ApplicationArea = All;
-                //     Visible = Rec.Type = Rec.Type::Item;
-                //     ToolTip = 'Specifies the value of the Inventory Posting Group field.';
-                // }
-                // field("Vendor Code"; Rec."Vendor Code")
-                // {
-                //     ApplicationArea = All;
-                //     Importance = Standard;
-                //     ToolTip = 'Specifies the value of the Vendor Code field.';
-                // }
-
-                // field("Qty. to Requested"; Rec."Qty. to Requested")
-                // {
-                //     ApplicationArea = All;
-                //     Importance = Standard;
-                //     ToolTip = 'Specifies the value of the Qty. to Requested field.';
-                // }
-                // field("Qty. Requested"; Rec."Qty. Requested")
-                // {
-                //     ApplicationArea = All;
-                //     ToolTip = 'Specifies the value of the Qty. Requested field.';
-                // }
-                // field("Request Date"; Rec."Request Date")
-                // {
-                //     ApplicationArea = All;
-                //     Importance = Standard;
-                //     ToolTip = 'Specifies the value of the Request Date field.';
-                // }
             }
         }
     }

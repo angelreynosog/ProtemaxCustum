@@ -16,7 +16,11 @@ pageextension 80119 "DG Sales Order" extends "Sales Order"
             {
                 ApplicationArea = All;
             }
-
+            field("DG Direct Sales"; Rec."DG Direct Sales")
+            {
+                Editable = false;
+                ApplicationArea = All;
+            }
         }
     }
 }

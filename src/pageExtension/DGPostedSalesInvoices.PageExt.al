@@ -9,6 +9,16 @@ pageextension 80117 "DG Posted Sales Invoices" extends "Posted Sales Invoices"
                 ApplicationArea = All;
                 Editable = InvoiceEditable;
             }
+            field("Pre-Assigned No."; Rec."Pre-Assigned No.")
+            {
+                ApplicationArea = All;
+            }
+            field("DG Channel"; Rec."DG Channel")
+            {
+                ApplicationArea = All;
+                Editable = false;
+            }
+
         }
     }
     actions

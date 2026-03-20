@@ -44,7 +44,7 @@ page 80112 "DG Detraction Card"
             action("Get Documents")
             {
                 Caption = 'Get Documents';
-                ToolTip = ' ';
+                ToolTip = 'Get Documents';
                 Image = GetLines;
                 Promoted = true;
                 PromotedCategory = Process;
@@ -133,7 +133,7 @@ page 80112 "DG Detraction Card"
             action("Generate Text File")
             {
                 Caption = 'Generate Text File';
-                ToolTip = ' ';
+                ToolTip = 'Generate Text File';
                 Image = ExportFile;
                 Promoted = true;
                 PromotedCategory = Process;

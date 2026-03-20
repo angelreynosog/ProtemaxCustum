@@ -9,5 +9,13 @@ pageextension 80106 "DG Posted Purchase Invoice" extends "Posted Purchase Invoic
                 ApplicationArea = All;
             }
         }
+
+        addlast(General)
+        {
+            field("DG Request No."; Rec."DG Request No.")
+            {
+                ApplicationArea = All;
+            }
+        }
     }
 }

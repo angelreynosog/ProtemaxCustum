@@ -14,6 +14,7 @@ page 80100 "DG Purchase Request Header"
             group(General)
             {
                 Caption = 'General';
+                Editable = IsEditable;
 
                 field("No."; Rec."No.")
                 {
@@ -29,6 +30,12 @@ page 80100 "DG Purchase Request Header"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Status Request field.';
+                }
+                field("Status Line"; Rec."Status Line")
+                {
+                    ApplicationArea = All;
+                    Editable = false;
+                    ToolTip = 'Specifies the value of the Status Line field.';
                 }
                 field("Create Date"; Rec."Create Date")
                 {
@@ -47,6 +54,7 @@ page 80100 "DG Purchase Request Header"
                 SubPageLink = "Document No." = field("No."), "Document Type" = field("Document Type");
                 UpdatePropagation = Both;
                 Visible = not VisibleApprvd;
+                Editable = IsEditable;
                 Caption = 'Lines';
             }
             part(PurchRequestLinesApprvd; "DG Purch. Request Line Apprvd")
@@ -55,6 +63,7 @@ page 80100 "DG Purchase Request Header"
                 SubPageLink = "Document No." = field("No."), "Document Type" = field("Document Type");
                 UpdatePropagation = Both;
                 Visible = VisibleApprvd;
+                Editable = IsEditable;
                 Caption = 'Lines';
             }
         }
@@ -68,6 +77,7 @@ page 80100 "DG Purchase Request Header"
                 ApplicationArea = All;
                 Caption = 'Request Document';
                 Image = Attach;
+                Enabled = IsEditable;
                 ToolTip = 'Executes the Request Document action.';
 
                 trigger OnAction()
@@ -86,6 +96,8 @@ page 80100 "DG Purchase Request Header"
     var
         User: Record User;
         UserSetup: Record "User Setup";
+        DGPurchaseRequestLine: Record "DG Purchase Request Line";
+        TotalPending: Decimal;
     begin
         User.Reset();
         User.SetRange("User Name", UserId);
@@ -97,8 +109,25 @@ page 80100 "DG Purchase Request Header"
             if not UserSetup.IsEmpty then
                 VisibleApprvd := true;
         end;
+
+        DGPurchaseRequestLine.Reset();
+        DGPurchaseRequestLine.SetRange("Document No.", Rec."No.");
+        DGPurchaseRequestLine.SetRange("Document Type", Rec."Document Type");
+        if DGPurchaseRequestLine.FindSet() then
+            repeat
+                DGPurchaseRequestLine.CalcFields("Qty. Requested");
+                TotalPending += DGPurchaseRequestLine.Quantity - DGPurchaseRequestLine."Qty. Requested";
+            until DGPurchaseRequestLine.Next() = 0;
+
+        if TotalPending = 0 then
+            Rec."Status Line" := Rec."Status Line"::Closed
+        else
+            Rec."Status Line" := Rec."Status Line"::Open;
+
+        IsEditable := Rec."Status Line" <> Rec."Status Line"::Closed;
     end;
 
     var
         VisibleApprvd: Boolean;
+        IsEditable: Boolean;
 }

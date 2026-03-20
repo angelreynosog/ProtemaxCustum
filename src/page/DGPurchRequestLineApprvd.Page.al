@@ -39,24 +39,6 @@ page 80120 "DG Purch. Request Line Apprvd"
                     Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
                     ToolTip = 'Specifies the value of the Description 2 field.';
                 }
-                // field("Inventory Total"; Rec."Inventory Total")
-                // {
-                //     ApplicationArea = All;
-                //     Visible = Rec.Type = Rec.Type::Item;
-                //     ToolTip = 'Specifies the value of the Inventory Total field.';
-                // }
-                // field("Inventory Without Obs. Whs."; Rec."Inventory Without Obs. Whs.")
-                // {
-                //     ApplicationArea = All;
-                //     Visible = Rec.Type = Rec.Type::Item;
-                //     ToolTip = 'Specifies the value of the Inventory Without Obs. Whs. field.';
-                // }
-                // field("Inventory Posting Group"; Rec."Inventory Posting Group")
-                // {
-                //     ApplicationArea = All;
-                //     Visible = Rec.Type = Rec.Type::Item;
-                //     ToolTip = 'Specifies the value of the Inventory Posting Group field.';
-                // }
                 field("Vendor Code"; Rec."Vendor Code")
                 {
                     ApplicationArea = All;
@@ -68,17 +50,18 @@ page 80120 "DG Purch. Request Line Apprvd"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Base Unit of Measure field.';
                 }
-                field("Unit Cost"; Rec."Unit Cost")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Unit Cost field.';
-                }
                 field(Quantity; Rec.Quantity)
                 {
                     ApplicationArea = All;
                     Importance = Standard;
                     ToolTip = 'Specifies the value of the Quantity field.';
                     Editable = Rec."Order Status" <> Rec."Order Status"::Requested;
+                }
+                field("Unit Cost"; Rec."Unit Cost")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Unit Cost field.';
+                    Editable = Rec.Type <> Rec.Type::Item;
                 }
                 field("Qty. to Requested"; Rec."Qty. to Requested")
                 {
@@ -95,6 +78,13 @@ page 80120 "DG Purch. Request Line Apprvd"
                 {
                     ApplicationArea = All;
                     Importance = Standard;
+                    ToolTip = 'Specifies the value of the Request Date field.';
+                }
+                field("Status Line"; Rec."Status Line")
+                {
+                    ApplicationArea = All;
+                    Importance = Standard;
+                    Editable = false;
                     ToolTip = 'Specifies the value of the Request Date field.';
                 }
             }
@@ -131,12 +121,31 @@ page 80120 "DG Purch. Request Line Apprvd"
                     DocumentAttachmentDetails.RunModal();
                 end;
             }
+            action("DG Approved")
+            {
+                ApplicationArea = All;
+                Caption = 'Approved';
+                Image = Approval;
+                Enabled = Rec."Status Line" <> Rec."Status Line"::Closed;
+                ToolTip = 'Approved';
+
+                trigger OnAction()
+                var
+                    DGPurchaseRequestHeader: Record "DG Purchase Request Header";
+                begin
+                    if DGPurchaseRequestHeader.Get(Rec."Document No.", Rec."Document Type") then begin
+                        DGPurchaseRequestHeader."Status Request" := DGPurchaseRequestHeader."Status Request"::Approved;
+                        DGPurchaseRequestHeader.Modify();
+                    end;
+                end;
+            }
             action("DG Generate Requisition")
             {
                 Caption = 'Generate Request';
                 ToolTip = 'Executes the Generate Request action.';
                 Image = ExecuteBatch;
                 ApplicationArea = All;
+                Enabled = Rec."Status Line" <> Rec."Status Line"::Closed;
                 trigger OnAction()
                 var
                     DGPurchaseRequestLine: Record "DG Purchase Request Line";

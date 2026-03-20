@@ -61,10 +61,10 @@ page 80103 "DG General Journal"
                 Image = "Action";
                 action(Post)
                 {
-                    Caption = 'Post', comment = 'ESP="Registrar"';
+                    Caption = 'Post';
                     Image = PostDocument;
                     Visible = true;
-                    ToolTip = 'Executes the Post action.', comment = 'ESP="Ejecuta la acción Registrar."';
+                    ToolTip = 'Executes the Post action.';
                     ApplicationArea = All;
                     trigger OnAction()
                     begin

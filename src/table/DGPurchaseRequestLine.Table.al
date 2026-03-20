@@ -101,6 +101,8 @@ table 80101 "DG Purchase Request Line"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
+            var
+                QuantityLbl: Label 'Check the quantity entered.';
             begin
                 if "Qty. to Requested" <> 0 then
                     "Order Status" := "Order Status"::Request
@@ -109,7 +111,7 @@ table 80101 "DG Purchase Request Line"
 
 
                 if not (("Qty. to Requested" + "Qty. Requested") <= Quantity) then
-                    Error('Ya no puede');
+                    Error(QuantityLbl);
             end;
         }
         field(15; "Qty. Requested"; Decimal)
@@ -156,6 +158,17 @@ table 80101 "DG Purchase Request Line"
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = lookup("DG Purchase Request Header"."Create Date" where("No." = field("Document No.")));
+        }
+        field(24; "Location Code"; Code[10])
+        {
+            Caption = 'Location Code';
+            TableRelation = Location where("Use As In-Transit" = const(false));
+        }
+        field(25; "Status Line"; Option)
+        {
+            Caption = 'Status Approved';
+            OptionMembers = "Open","Closed";
+            OptionCaption = 'Open,Closed';
         }
     }
 

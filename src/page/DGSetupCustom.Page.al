@@ -3,7 +3,7 @@ namespace ProtemaxCustum.ProtemaxCustum;
 page 80119 "DG Setup Custom"
 {
     ApplicationArea = All;
-    Caption = 'DG Setup Custom';
+    Caption = 'DG Protemax Setup Custom';
     PageType = Card;
     SourceTable = "DG Protemax Setup Custom";
     UsageCategory = Administration;
@@ -12,12 +12,34 @@ page 80119 "DG Setup Custom"
     {
         area(Content)
         {
+            group("Sales")
+            {
+                Caption = 'Sales';
+                field("Location Direct Sales"; Rec."Location Direct Sales")
+                {
+                    ToolTip = 'Specifies the value of the Location Direct Sales field.';
+                    ApplicationArea = All;
+                }
+
+            }
+            group("Assembly")
+            {
+                Caption = 'Assembly';
+                field("Assembly Order CRM"; Rec."Assembly Order CRM")
+                {
+                    ToolTip = 'Specifies the value of the Assembly Order CRM field.';
+                }
+                field("Posted Assembly Order CRM"; Rec."Posted Assembly Order CRM")
+                {
+                    ToolTip = 'Specifies the value of the Posted Assembly Order CRM field.';
+                }
+            }
             group(Payroll)
             {
                 Caption = 'Payroll';
                 field("Jnl. Templ. Name Payroll"; Rec."Jnl. Templ. Name Payroll")
                 {
-                    ToolTip = 'Specifies the value of the nl. Templ. Name Payroll field.';
+                    ToolTip = 'Specifies the value of the Jnl. Templ. Name Payroll field.';
                 }
                 field("Jnl Batch Name Payroll"; Rec."Jnl Batch Name Payroll")
                 {

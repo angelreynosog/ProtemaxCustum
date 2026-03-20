@@ -3,10 +3,110 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="DG Protemax Custom">
     <body>
       <group id="body">
+        <trans-unit id="Page 3867690798 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DG Sales &amp; OT Line List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 1191741737 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Assembly Order No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Assembly Order No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 2137847586 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Canceled Posted field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Canceled Posted - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 3320823955 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Line No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Line No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 2161572060 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Location Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Location Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 2522146953 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Order Word Document field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Order Word Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 893739690 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Posted Assembly Order No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Posted Assembly Order No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 1915851633 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Posting Group field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Posting Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 1915851633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Quantity field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 3532184374 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ready Posted field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Ready Posted - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 33726994 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sales Invoice No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Sales Invoice No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 2600934772 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Status CRM field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Status CRM - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3867690798 - Action 28343883 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Assembly</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Sales &amp; OT Line List - Action DG Create Assembly - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 930542937 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>DG Setup Custom</source>
+          <source>DG Protemax Setup Custom</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 930542937 - Control 2573847538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Assembly - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 930542937 - Control 1830757288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Assembly Order CRM field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Assembly Order CRM - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 930542937 - Control 3399413879 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Posted Assembly Order CRM field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Posted Assembly Order CRM - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 930542937 - Control 2614479299 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Detraction</source>
@@ -49,9 +149,19 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Jnl Batch Name Payroll - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 930542937 - Control 4016275686 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the nl. Templ. Name Payroll field.</source>
+          <source>Specifies the value of the Jnl. Templ. Name Payroll field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Jnl. Templ. Name Payroll - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 930542937 - Control 1406942772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 930542937 - Control 2821939268 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Location Direct Sales field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Setup Custom - Control Location Direct Sales - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3462295906 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Comment line</source>
@@ -483,6 +593,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 774464793 - Field 1830757288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assembly Order CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Assembly Order CRM - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 774464793 - Field 2139693550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Gen. Prod. Posting Group</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -507,6 +622,16 @@
           <source>Journal Template Nam Payroll</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Jnl. Templ. Name Payroll - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 2821939268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location Direct Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Location Direct Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 774464793 - Field 3399413879 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Assembly Order CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Protemax Setup Custom - Field Posted Assembly Order CRM - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 774464793 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Primary Key</source>
@@ -547,6 +672,16 @@
           <source>Request Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Header - Field Request Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 666547410 - Field 179163806 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Approved</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Header - Field Status Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 666547410 - Field 179163806 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open,Closed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Header - Field Status Line - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 666547410 - Field 534984183 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Status Request</source>
@@ -623,6 +758,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Line No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 177378425 - Field 2161572060 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Location Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 177378425 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -648,6 +788,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Qty. to Requested - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 177378425 - Field 1882053547 - Method 2126772001 - NamedType 2174691427" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check the quantity entered.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Qty. to Requested - Method OnValidate - NamedType QuantityLbl</note>
+        </trans-unit>
         <trans-unit id="Table 177378425 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Quantity</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -657,6 +802,16 @@
           <source>Request Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Request Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 177378425 - Field 179163806 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Approved</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Status Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 177378425 - Field 179163806 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open,Closed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Status Line - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 177378425 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type</source>
@@ -678,8 +833,108 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DG Purchase Request Line - Field Vendor Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2604704804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Relation Sales &amp; OT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2604704804 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2604704804 - Field 969601889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Id CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT - Field Order Id CRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2604704804 - Field 1678866689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Work</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT - Field Order Work - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Relation Sales &amp; OT Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 1191741737 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assembly Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Assembly Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 2137847586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Canceled Posted</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Canceled Posted - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 2161572060 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Location Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 2522146953 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Word Document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Order Word Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 893739690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Assembly Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Posted Assembly Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 1915851633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 3532184374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ready Posted</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Ready Posted - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 33726994 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoice No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Sales Invoice No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 2600934772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status BC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Status CRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 2600934772 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Registered,Completed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Status CRM - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 335801138 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DG Relation Sales &amp; OT Line - Field Type - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3694108872 - Method 1676490895 - NamedType 3854350619" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The %1 request has been successfully completed.</source>
+          <source>Requisition has been successfully generated, purchase order %1</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit DG Managament - Method ConvertRequestPurchase - NamedType SuccessLbl</note>
         </trans-unit>
@@ -739,7 +994,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Control DGDetractionList - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 754053818 - Action 1586576836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source> </source>
+          <source>Generate Text File</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Action Generate Text File - Property ToolTip</note>
         </trans-unit>
@@ -749,7 +1004,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Action Generate Text File - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 754053818 - Action 2591044054 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source> </source>
+          <source>Get Documents</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Detraction Card - Action Get Documents - Property ToolTip</note>
         </trans-unit>
@@ -1100,12 +1355,12 @@
         </trans-unit>
         <trans-unit id="Page 1335482968 - Action 2282416948 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Executes the Post action.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ejecuta la acción Registrar."</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Action Post - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1335482968 - Action 2282416948 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Post</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Registrar"</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG General Journal - Action Post - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 594860574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -1293,6 +1548,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purch. Request Line Apprvd - Control Request Date - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 3961302641 - Control 179163806 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Request Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purch. Request Line Apprvd - Control Status Line - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 3961302641 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Type field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1307,6 +1567,16 @@
           <source>Specifies the value of the Vendor Code field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purch. Request Line Apprvd - Control Vendor Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3961302641 - Action 3852794356 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approved</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purch. Request Line Apprvd - Action DG Approved - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3961302641 - Action 3852794356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approved</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purch. Request Line Apprvd - Action DG Approved - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3961302641 - Action 3462295906 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Executes the Comments action.</source>
@@ -1368,6 +1638,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Control No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 666547410 - Control 179163806 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Status Line field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Header - Control Status Line - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 666547410 - Control 534984183 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Status Request field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1428,11 +1703,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Type - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 177378425 - Control 381961415 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Unit Cost field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request Line - Control Unit Cost - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="Page 177378425 - Action 3462295906 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Executes the Comments action.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1473,6 +1743,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request List - Control No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 1839426941 - Control 179163806 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Status Line field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request List - Control Status Line - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1839426941 - Control 534984183 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Status Request field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1482,6 +1757,26 @@
           <source>Specifies the value of the User Id field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DG Purchase Request List - Control User Id - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2161097571 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DG Relation Sales &amp; OT Lists</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Relation Sales &amp; OT Lists - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2161097571 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Relation Sales &amp; OT Lists - Control Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2161097571 - Control 969601889 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Order Id CRM field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Relation Sales &amp; OT Lists - Control Order Id CRM - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2161097571 - Control 1678866689 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Order Terminated field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DG Relation Sales &amp; OT Lists - Control Order Work - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 241990646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>DG Sales Invoice</source>
@@ -1963,28 +2258,33 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension DG User Setup - Control DG Non-Billable Invoice - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3611073118 - Field 3501442972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2091775483">
+          <source>Assembly Automatic</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Assembly Header - Field DG Assembly Automatic - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3683797941 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2825951060">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG G/L Entry - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 792212330 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1806786327">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Gen. Journal Line - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4102443452 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1001880325">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Invt. Posting Buffer - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1674483427 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Item Journal Line - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1834434529 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Item Ledger Entry - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
@@ -1993,8 +2293,23 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Location - Field DG Mark Obsolete Inventory - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 4211993242 - Field 3167413641 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2308244223">
+          <source>Description Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Production Order - Field DG Description Details - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4211993242 - Field 1246415934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2308244223">
+          <source>Order Number CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Production Order - Field DG Order Number CRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4211993242 - Field 1949796884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2308244223">
+          <source>Order Work CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Production Order - Field DG Order Work CRM - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 948297851 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purch. Inv. Header - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
@@ -2003,18 +2318,18 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purch. Inv. Header - Field DG Request No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1041129159 - Field 301380587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1052755578">
+          <source>Document SUNAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purch. Rcpt. Header - Field DG Document SUNAT - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1041129159 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1052755578">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purch. Rcpt. Header - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 950583648 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purch. Rcpt. Line - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 3539767945 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchase Header - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
@@ -2024,24 +2339,29 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchase Header - Field DG Request No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4091895893 - Field 1021157617 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
-          <source>* Batch Payment Detraction</source>
+          <source>Batch Payment Detraction</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchases &amp; Payables Setup - Field Batch Payment Detraction - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4091895893 - Field 109551202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
-          <source>* Purchase Order Footer</source>
+          <source>Purchase Order Footer</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchases &amp; Payables Setup - Field DG Purchase Order Footer Text - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4091895893 - Field 3279947730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
-          <source>* DG Request Nos.</source>
+          <source>DG Request Nos.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchases &amp; Payables Setup - Field DG Request Nos. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4091895893 - Field 522764294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
-          <source>* Serie Batch Code</source>
+          <source>Serie Batch Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Purchases &amp; Payables Setup - Field DG Serie Batch Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 599156320 - Field 3599092412 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Channel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field DG Channel - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 599156320 - Field 2850400494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Completion Consumption</source>
@@ -2053,10 +2373,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field DG Completion Consumption - Property OptionCaption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 599156320 - Field 1789098090 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Direct Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field DG Direct Sales - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 599156320 - Field 3397758163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Non-Billable Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field DG Non-Billable Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 599156320 - Field 1246415934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Order Number CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Header - Field DG Order Number CRM - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 599156320 - Field 3967060324 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Order Terminated</source>
@@ -2073,6 +2403,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Header - Field Completion Consumption - Property OptionCaption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2685827359 - Field 3599092412 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Channel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Header - Field DG Channel - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2685827359 - Field 3397758163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Non-Billable Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2083,10 +2418,50 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Header - Field Order Terminated - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 4091833912 - Field 3738342008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2079186865">
+          <source>Order Id CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Line - Field DG Order Id CRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4091833912 - Field 2101192760 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2079186865">
+          <source>Order Work</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Line - Field DG Order Work - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4091833912 - Field 2836917245 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2079186865">
+          <source>Status CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Line - Field DG Status CRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4091833912 - Field 2836917245 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2079186865">
+          <source> ,Unscheduled,Registered,Completed,Canceled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Invoice Line - Field DG Status CRM - Property OptionCaption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3298178183 - Field 1126915314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Code System Id</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Line - Field DG Code System Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3298178183 - Field 3738342008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Order Id CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Line - Field DG Order Id CRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3298178183 - Field 2101192760 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Order Work</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Line - Field DG Order Work - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3298178183 - Field 2836917245 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Status CRM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Line - Field DG Status CRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3298178183 - Field 2836917245 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source> ,Unscheduled,Registered,Completed,Canceled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Sales Line - Field DG Status CRM - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="TableExtension 950980695 - Field 3455100546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
           <source>Approver Requestor OC</source>
@@ -2099,7 +2474,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG User Setup - Field DG Non-Billable Invoice - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1357718792 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 467645625">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Value Entry - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>
@@ -2113,8 +2488,13 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Vendor - Field DG Generic Vendor - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3809991807 - Field 301380587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
+          <source>Document SUNAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Warehouse Receipt Header - Field DG Document SUNAT - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3809991807 - Field 2071511050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
-          <source>No. Guide Recep./Origen DUA/Direct Invoice</source>
+          <source>No. Guide Recep.|Origen DUA|Direct Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DG Warehouse Receipt Header - Field DG No. Guide Recep./Origen DUA - Property Caption</note>
         </trans-unit>

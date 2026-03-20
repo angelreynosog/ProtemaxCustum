@@ -16,5 +16,9 @@ tableextension 80113 "DG Sales Invoice Header" extends "Sales Invoice Header"
             OptionCaption = ' ,Yes,No';
             OptionMembers = ,Yes,No;
         }
+        field(80105; "DG Channel"; Text[250])
+        {
+            Caption = 'Channel';
+        }
     }
 }

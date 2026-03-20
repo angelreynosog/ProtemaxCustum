@@ -30,6 +30,10 @@ page 80118 "DG Sales Invoice Line API"
                 { }
                 field(no; Rec."No.")
                 { }
+                field(description; Rec.Description)
+                { }
+                field(description2; Rec."Description 2")
+                { }
                 field(locationCode; Rec."Location Code")
                 { }
                 field(unitMeasureCode; Rec."Unit of Measure Code")
@@ -37,6 +41,16 @@ page 80118 "DG Sales Invoice Line API"
                 field(quantity; Rec.Quantity)
                 { }
                 field(unitPrice; Rec."Unit Price")
+                { }
+                field(lineDiscountPercent; Rec."Line Discount %")
+                { }
+                field(lineDiscountAmount; Rec."Line Discount Amount")
+                { }
+                field(dGStatusCRM; Rec."DG Status CRM")
+                { }
+                field(dgOrderIDCRM; Rec."DG Order Id CRM")
+                { }
+                field(dgOrderWork; Rec."DG Order Work")
                 { }
             }
         }

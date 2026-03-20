@@ -2,31 +2,40 @@ codeunit 80100 "DG Managament"
 {
     Permissions = tabledata "DG Protemax Setup Custom" = rimd,
                   tabledata "Sales Invoice Header" = m,
-                  tabledata "DG Purchase Request Header" = m;
+                  tabledata "DG Purchase Request Header" = m,
+                  tabledata "Purchase Header" = rimd,
+                  tabledata "Purchase Line" = rimd,
+                  tabledata "Sales Invoice Line" = rimd;
 
     procedure ConvertRequestPurchase(RecordRefIn: RecordRef)
     var
         DGPurchaseRequestLine: Record "DG Purchase Request Line";
-        SuccessLbl: Label 'The %1 request has been successfully completed.';
+        PurchaseHeader: Record "Purchase Header";
+        SuccessLbl: Label 'Requisition has been successfully generated, purchase order %1';
+        IsProccess: Boolean;
     begin
         RecordRefIn.SetTable(DGPurchaseRequestLine);
-        DGPurchaseRequestLine.Reset();
+        IsProccess := false;
+        Clear(VendorOrderDict);
         DGPurchaseRequestLine.SetFilter("Qty. to Requested", '<>0');
         DGPurchaseRequestLine.SetFilter("Request Date", '<>%1', 0D);
+        DGPurchaseRequestLine.SetFilter("Location Code", '<>%1');
         if DGPurchaseRequestLine.FindSet() then begin
             repeat
-                FindHeaderRequest(DGPurchaseRequestLine."Document No.");
-                CreatePurchaseHeader(DGPurchaseRequestLine."Vendor Code");
-                CreatePurchaseLine(DGPurchaseRequestLine);
-                TransfieldPostedInsert(DGPurchaseRequestLine);
+                if DGPurchaseRequestHeader.Get(DGPurchaseRequestLine."Document No.", DGPurchaseRequestLine."Document Type") then
+                    if DGPurchaseRequestHeader."Status Request" = DGPurchaseRequestHeader."Status Request"::Approved then begin
+                        FindHeaderRequest(DGPurchaseRequestLine."Document No.");
+                        CreatePurchaseHeader(DGPurchaseRequestLine."Vendor Code");
+                        CreatePurchaseLine(DGPurchaseRequestLine);
+                        TransfieldPostedInsert(DGPurchaseRequestLine);
+                        IsProccess := true;
+                    end;
+
             until DGPurchaseRequestLine.Next() = 0;
-
-            if DGPurchaseRequestHeader.Get(DGPurchaseRequestLine."Document No.", DGPurchaseRequestLine."Document Type") then begin
-                DGPurchaseRequestHeader."Status Request" := DGPurchaseRequestHeader."Status Request"::Approved;
-                DGPurchaseRequestHeader.Modify();
-            end;
-
-            Message(SuccessLbl, NewDocLastNo);
+            if IsProccess then
+                if PurchaseHeader.Get(PurchaseHeader."Document Type"::Order, NewDocLastNo) then
+                    if Confirm(StrSubstNo(SuccessLbl, PurchaseHeader."No.")) then
+                        Page.Run(Page::"Purchase Order", PurchaseHeader);
         end;
     end;
 
@@ -64,6 +73,50 @@ codeunit 80100 "DG Managament"
             until SalesInvoiceHeader.Next() = 0;
     end;
 
+    procedure RecordRefAssemblyOrder(RecordRefIn: RecordRef)
+    var
+        DGRelationSalesOTLine: Record "DG Relation Sales & OT Line";
+        AssemblyHeader: Record "Assembly Header";
+        AssemblyHeader1: Record "Assembly Header";
+        NoSeries: Codeunit "No. Series";
+        No: Code[20];
+    begin
+        RecordRefIn.SetTable(DGRelationSalesOTLine);
+        if DGRelationSalesOTLine.FindSet() then
+            repeat
+                DGProtemaxSetupCustom.Get();
+                DGProtemaxSetupCustom.TestField("Assembly Order CRM");
+                DGProtemaxSetupCustom.TestField("Posted Assembly Order CRM");
+                No := NoSeries.GetNextNo(DGProtemaxSetupCustom."Assembly Order CRM");
+
+                AssemblyHeader.Init();
+                AssemblyHeader.Validate("Document Type", AssemblyHeader."Document Type"::Order);
+                AssemblyHeader."No." := No;
+                AssemblyHeader."No. Series" := DGProtemaxSetupCustom."Posted Assembly Order CRM";
+                AssemblyHeader."Posting No. Series" := DGProtemaxSetupCustom."Posted Assembly Order CRM";
+                AssemblyHeader."DG Assembly Automatic" := true;
+                AssemblyHeader.Validate("Item No.", DGRelationSalesOTLine."No.");
+                AssemblyHeader.Validate("Posting Date", Today);
+                AssemblyHeader.Validate("Due Date", Today);
+                AssemblyHeader.Insert();
+
+                AssemblyHeader1.Reset();
+                AssemblyHeader1.SetRange("Document Type", AssemblyHeader1."Document Type"::Order);
+                AssemblyHeader1.SetRange("No.", No);
+                if not AssemblyHeader1.IsEmpty then begin
+                    AssemblyHeader.Validate("Location Code", DGRelationSalesOTLine."Location Code");
+                    AssemblyHeader.Validate(Quantity, DGRelationSalesOTLine.Quantity);
+                    AssemblyHeader.Validate("Assembled Quantity", DGRelationSalesOTLine.Quantity);
+                    AssemblyHeader.Modify();
+                end;
+                CODEUNIT.Run(CODEUNIT::"Assembly-Post", AssemblyHeader);
+
+                DGRelationSalesOTLine."Assembly Order No." := No;
+                DGRelationSalesOTLine."Status CRM" := DGRelationSalesOTLine."Status CRM"::Completed;
+                DGRelationSalesOTLine.Modify();
+            until DGRelationSalesOTLine.Next() = 0;
+    end;
+
     local procedure FindHeaderRequest(DocNoIn: Code[20])
     begin
         if not DGPurchaseRequestHeader.Get(DocNoIn, DGPurchaseRequestHeader."Document Type"::Request) then
@@ -77,7 +130,7 @@ codeunit 80100 "DG Managament"
         PurchasesPayablesSetup: Record "Purchases & Payables Setup";
         NoSeries: Codeunit "No. Series";
         VendorNo: Code[20];
-        NewVendorNo: Code[20];
+        //NewVendorNo: Code[20];
         No: Code[20];
         VendorPurchaseQuoteErr: Label 'There must be a generic vendor.';
     begin
@@ -92,12 +145,10 @@ codeunit 80100 "DG Managament"
                 Error(VendorPurchaseQuoteErr);
         end;
 
-        NewVendorNo := VendorNo;
-        if not (NewVendorNo = NewVendorLastNo) then begin
-            Clear(NewVendorLastNo);
-            Clear(NewDocLastNo);
-            Clear(DocLastNo);
-
+        if VendorOrderDict.ContainsKey(VendorNo) then begin
+            NewDocLastNo := VendorOrderDict.Get(VendorNo);
+            NewVendorLastNo := VendorNo;
+        end else begin
             PurchasesPayablesSetup.Get();
             PurchasesPayablesSetup.TestField("Order Nos.");
 
@@ -108,11 +159,13 @@ codeunit 80100 "DG Managament"
             PurchaseHeader.Validate("Buy-from Vendor No.", VendorNo);
             PurchaseHeader.Validate("Pay-to Vendor No.", VendorNo);
             PurchaseHeader.Validate("Posting Date", WorkDate());
+            PurchaseHeader.Validate("Document Date", WorkDate());
             PurchaseHeader."DG Request No." := DGPurchaseRequestHeader."No.";
             PurchaseHeader.Insert();
 
             NewDocLastNo := No;
             NewVendorLastNo := VendorNo;
+            VendorOrderDict.Add(VendorNo, No);
         end;
     end;
 
@@ -128,33 +181,19 @@ codeunit 80100 "DG Managament"
         else
             NoLine += 10000;
 
-        PurchaseLine.Reset();
-        PurchaseLine.SetRange("Document Type", PurchaseLine."Document Type"::Order);
-        PurchaseLine.SetRange("Document No.", NewDocLastNo);
-        if PurchaseLine.FindSet() then begin
-            PurchaseLine."Line No." := NoLine;
-            PurchaseLine.Type := DGPurchaseRequestLineIn.Type;
-            PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."No.");
-            PurchaseLine.Description := DGPurchaseRequestLineIn."Description 2";
-            PurchaseLine.Validate(Quantity, DGPurchaseRequestLineIn."Qty. to Requested");
-            if DGPurchaseRequestLineIn."Unit Cost" <> 0 then
-                PurchaseLine.Validate("Direct Unit Cost", DGPurchaseRequestLineIn."Unit Cost");
-            PurchaseLine."Requested Receipt Date" := DGPurchaseRequestLineIn."Request Date";
-            PurchaseLine.Insert();
-        end else begin
-            PurchaseLine.Init();
-            PurchaseLine."Document Type" := PurchaseLine."Document Type"::Order;
-            PurchaseLine."Document No." := NewDocLastNo;
-            PurchaseLine."Line No." := NoLine;
-            PurchaseLine.Type := DGPurchaseRequestLineIn.Type;
-            PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."No.");
-            PurchaseLine.Description := DGPurchaseRequestLineIn."Description 2";
-            PurchaseLine.Validate(Quantity, DGPurchaseRequestLineIn."Qty. to Requested");
-            if DGPurchaseRequestLineIn."Unit Cost" <> 0 then
-                PurchaseLine.Validate("Direct Unit Cost", DGPurchaseRequestLineIn."Unit Cost");
-            PurchaseLine."Requested Receipt Date" := DGPurchaseRequestLineIn."Request Date";
-            PurchaseLine.Insert();
-        end;
+        PurchaseLine.Init();
+        PurchaseLine."Document Type" := PurchaseLine."Document Type"::Order;
+        PurchaseLine."Document No." := NewDocLastNo;
+        PurchaseLine."Line No." := NoLine;
+        PurchaseLine.Type := DGPurchaseRequestLineIn.Type;
+        PurchaseLine.Validate("No.", DGPurchaseRequestLineIn."No.");
+        PurchaseLine.Description := DGPurchaseRequestLineIn."Description 2";
+        PurchaseLine.Validate(Quantity, DGPurchaseRequestLineIn."Qty. to Requested");
+        PurchaseLine.Validate("Location Code", DGPurchaseRequestLineIn."Location Code");
+        if DGPurchaseRequestLineIn."Unit Cost" <> 0 then
+            PurchaseLine.Validate("Direct Unit Cost", DGPurchaseRequestLineIn."Unit Cost");
+        PurchaseLine."Requested Receipt Date" := DGPurchaseRequestLineIn."Request Date";
+        PurchaseLine.Insert();
     end;
 
     local procedure TransfieldPostedInsert(var DGPurchaseRequestLineIn: Record "DG Purchase Request Line")
@@ -189,6 +228,11 @@ codeunit 80100 "DG Managament"
             Clear(DGPurchaseRequestLineIn."Qty. to Requested");
             Clear(DGPurchaseRequestLineIn."Vendor Code");
             DGPurchaseRequestLineIn."Order Status" := DGPurchaseRequestLineIn."Order Status"::Requested;
+            DGPurchaseRequestLineIn.CalcFields("Qty. Requested");
+            if DGPurchaseRequestLineIn."Qty. Requested" = DGPurchaseRequestLineIn.Quantity then
+                DGPurchaseRequestLineIn."Status Line" := DGPurchaseRequestLineIn."Status Line"::Closed
+            else
+                DGPurchaseRequestLineIn."Status Line" := DGPurchaseRequestLineIn."Status Line"::Open;
             DGPurchaseRequestLineIn.Modify();
         end;
     end;
@@ -307,9 +351,7 @@ codeunit 80100 "DG Managament"
     var
         SalesHeader: Record "Sales Header";
     begin
-        if not SalesHeader.Get(SalesLine."Document Type", SalesLine."Document No.") then
-            clear(SalesHeader)
-        else
+        if SalesHeader.Get(SalesLine."Document Type", SalesLine."Document No.") then
             SalesLine.Validate("DG Code System Id", SalesHeader.SystemId);
     end;
 
@@ -324,11 +366,20 @@ codeunit 80100 "DG Managament"
     begin
         PurchaseHeader."DG No. Guide Recep./Origen DUA" := WarehouseReceiptHeader."DG No. Guide Recep./Origen DUA";
         PurchRcptHeader."DG No. Guide Recep./Origen DUA" := WarehouseReceiptHeader."DG No. Guide Recep./Origen DUA";
+        PurchRcptHeader."DG Document SUNAT" := WarehouseReceiptHeader."DG Document SUNAT";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnBeforePurchRcptLineInsert', '', true, true)]
+    local procedure "Purch.-Post_OnBeforePurchRcptLineInsert"(var PurchRcptLine: Record "Purch. Rcpt. Line"; var PurchRcptHeader: Record "Purch. Rcpt. Header")
+    begin
+        PurchRcptLine."DG No. Guide Recep./Origen DUA" := PurchRcptHeader."DG No. Guide Recep./Origen DUA";
+        PurchRcptLine."DG Document SUNAT" := PurchRcptHeader."DG Document SUNAT";
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Whse.-Post Receipt", 'OnPostSourceDocumentOnAfterGetWhseRcptHeader', '', true, true)]
     local procedure "Whse.-Post Receipt_OnPostSourceDocumentOnAfterGetWhseRcptHeader"(var WarehouseReceiptHeader: Record "Warehouse Receipt Header")
     begin
+        WarehouseReceiptHeader.TestField("DG Document SUNAT");
         WarehouseReceiptHeader.TestField("DG No. Guide Recep./Origen DUA");
     end;
 
@@ -404,13 +455,88 @@ codeunit 80100 "DG Managament"
                 end;
     end;
 
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Sales Order to Sales Order", 'OnCreateSalesOrderHeaderOnBeforeSalesHeaderInsert', '', true, true)]
+    local procedure "CRM Sales Order to Sales Order"(var SalesHeader: Record "Sales Header"; CRMSalesorder: Record "CRM Salesorder")
+    begin
+        SalesHeader."DG Order Number CRM" := CRMSalesorder.OrderNumber;
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Assembly Header", 'OnValidateItemNoOnBeforeValidateDates', '', true, true)]
+    local procedure "Assembly Header_OnValidateItemNoOnBeforeValidateDates"(var AssemblyHeader: Record "Assembly Header"; var IsHandled: Boolean)
+    begin
+        if AssemblyHeader."DG Assembly Automatic" then
+            IsHandled := true;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Assembly Line Management", 'OnUpdateAssemblyLinesOnBeforeAutoReserveAsmLine', '', true, true)]
+    local procedure "Assembly Line Management_OnUpdateAssemblyLinesOnBeforeAutoReserveAsmLine"(var AssemblyLine: Record "Assembly Line")
+    var
+        AssemblyHeader: Record "Assembly Header";
+    begin
+        AssemblyHeader.Reset();
+        AssemblyHeader.SetRange("Document Type", AssemblyLine."Document Type");
+        AssemblyHeader.SetRange("No.", AssemblyLine."Document No.");
+        AssemblyHeader.SetRange("DG Assembly Automatic", true);
+        if AssemblyHeader.FindFirst() then
+            AssemblyLine."Due Date" := AssemblyHeader."Due Date";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnBeforeSalesInvLineInsert', '', true, true)]
+    local procedure "Sales-Post_OnBeforeSalesInvLineInsert"(var SalesInvLine: Record "Sales Invoice Line"; SalesLine: Record "Sales Line")
+    var
+        DGRelationSalesOTLine: Record "DG Relation Sales & OT Line";
+        Item: Record Item;
+        LineNo: Integer;
+    begin
+        if SalesLine.Type in [SalesLine.Type::Item] then begin
+            Item.Get(SalesLine."No.");
+            Item.CalcFields("Assembly BOM");
+            if (SalesLine."DG Order Work" <> '') then
+                if (Item."Assembly BOM") then begin
+                    DGRelationSalesOTLine.Reset();
+                    DGRelationSalesOTLine.SetRange("Order Word Document", SalesLine."DG Order Work");
+                    if DGRelationSalesOTLine.FindLast() then
+                        LineNo := DGRelationSalesOTLine."Line No." + 10000
+                    else
+                        LineNo := 10000;
+                    DGRelationSalesOTLine.Init();
+                    DGRelationSalesOTLine."Order Word Document" := SalesLine."DG Order Work";
+                    DGRelationSalesOTLine."Line No." := LineNo;
+                    DGRelationSalesOTLine.Type := SalesLine.Type;
+                    DGRelationSalesOTLine.Validate("No.", SalesLine."No.");
+                    DGRelationSalesOTLine."Posting Group" := Item."Inventory Posting Group";
+                    DGRelationSalesOTLine.Description := SalesLine.Description;
+                    DGRelationSalesOTLine."Location Code" := SalesLine."Location Code";
+                    DGRelationSalesOTLine.Quantity := SalesLine.Quantity;
+                    DGRelationSalesOTLine."Status CRM" := DGRelationSalesOTLine."Status CRM"::Registered;
+                    DGRelationSalesOTLine."Sales Invoice No." := SalesInvLine."Document No.";
+                    DGRelationSalesOTLine.Insert();
+                end;
+            SalesInvLine."DG Status CRM" := SalesInvLine."DG Status CRM"::Completed;
+        end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Assembly-Post", 'OnAfterPost', '', true, true)]
+    local procedure "Assembly-Post_OnAfterPost"(PostedAssemblyHeader: Record "Posted Assembly Header"; var AssemblyHeader: Record "Assembly Header")
+    var
+        DGRelationSalesOTLine: Record "DG Relation Sales & OT Line";
+    begin
+        DGRelationSalesOTLine.Reset();
+        DGRelationSalesOTLine.SetRange("Assembly Order No.", AssemblyHeader."No.");
+        if DGRelationSalesOTLine.FindFirst() then begin
+            DGRelationSalesOTLine."Posted Assembly Order No." := PostedAssemblyHeader."No.";
+            DGRelationSalesOTLine.Modify();
+        end;
+    end;
+
 
     var
         DGProtemaxSetupCustom: Record "DG Protemax Setup Custom";
         DGPurchaseRequestHeader: Record "DG Purchase Request Header";
         DGCommentLine: Record "DG Comment Line";
+        VendorOrderDict: Dictionary of [Code[20], Code[20]];
         NewDocLastNo: Code[20];
         NewVendorLastNo: Code[20];
-        DocLastNo: Code[20];
+        //DocLastNo: Code[20];
         NoLine: Integer;
 }

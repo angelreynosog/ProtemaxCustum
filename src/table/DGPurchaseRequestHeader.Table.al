@@ -35,6 +35,12 @@ table 80100 "DG Purchase Request Header"
             Editable = false;
             DataClassification = CustomerContent;
         }
+        field(6; "Status Line"; Option)
+        {
+            Caption = 'Status Approved';
+            OptionMembers = "Open","Closed";
+            OptionCaption = 'Open,Closed';
+        }
         field(98; "User Id"; Code[50])
         {
             Caption = 'User Id';

@@ -43,6 +43,21 @@ table 80110 "DG Protemax Setup Custom"
             Caption = 'VAT Prod. Posting Group';
             TableRelation = "VAT Product Posting Group";
         }
+        field(8; "Assembly Order CRM"; Code[20])
+        {
+            Caption = 'Assembly Order CRM';
+            TableRelation = "No. Series";
+        }
+        field(9; "Posted Assembly Order CRM"; Code[20])
+        {
+            Caption = 'Posted Assembly Order CRM';
+            TableRelation = "No. Series";
+        }
+        field(10; "Location Direct Sales"; Code[10])
+        {
+            Caption = 'Location Direct Sales';
+            TableRelation = Location.Code;
+        }
     }
 
     keys
